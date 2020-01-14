@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   public mealsPreview: MealsPreviewType = [{
     title: 'Select your Meals',
     subtitle: 'Choose your plan and enter your details',
-    url: '../../assets/images/meals-preview-1.png',
+    url: '../../assets/images/meals-preview.png',
   }, {
     title: 'We package and deliver',
     subtitle: 'We will deliver a packaged box with all ingredients',
