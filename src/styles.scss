@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #e8213d;
+$dark-gray: #393939;
+$pale-grey: #f5f5f9;
+$pale-grey-two: #ededf1;
+
+.bg {
+  background-color: #ffffff;
+}
+
+.btn-primary {
+  border-radius: 4px !important;
+  background-color: $primary !important;
+  border: $primary !important;
+  color: #ffffff !important;
+}
+
