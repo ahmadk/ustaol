@@ -1,0 +1,57 @@
+<!--https://github.com/ng-bootstrap/ng-bootstrap/issues/738#issuecomment-337821504-->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right bg-dark" type="button"
+            (click)="navbarCollapsed = !navbarCollapsed"
+            [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarContent">
+      <ul class="navbar-nav mr-auto nav-group">
+        <li class="nav-item" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/home']" (click)="navbarCollapsed = true">
+            <img src="../../../assets/images/logo.jpg" alt="logo">
+          </a>
+        </li>
+        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/home']" (click)="navbarCollapsed = true">Home</a>
+        </li>
+        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/about-us']" (click)="navbarCollapsed = true">Plans</a>
+        </li>
+        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/contact-us']" (click)="navbarCollapsed = true">Menu</a>
+        </li>
+        <li class="nav-item mt-3 ml-2">
+          <div ngbDropdown class="d-inline-block">
+            <a class="nav-link" id="dropdownBasic1" href="#" onclick="return false;" ngbDropdownToggle>How it works</a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <button ngbDropdownItem>Something else is here</button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/faq']" (click)="navbarCollapsed = true">FAQ</a>
+        </li>
+        <li class="nav-item mt-3" [routerLinkActive]="['active']">
+          <a class="nav-link" [routerLink]="['/contact-us']" (click)="navbarCollapsed = true">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-group">
+        <li class="nav-item ml-2">
+          <div class="float-right navbar-nav">
+            <a class="nav-link" [routerLink]="['/contact-us']" (click)="navbarCollapsed = true">Sign in</a>
+          </div>
+        </li>
+        <li class="nav-item ml-2">
+          <a class="btn btn-primary getting-started" href="#">Getting started</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

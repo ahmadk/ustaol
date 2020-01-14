@@ -1,0 +1,141 @@
+@import "src/styles.scss";
+
+.hero-background {
+  background-image: url("../../../assets/images/hero-bg.png");
+  width: auto;
+  height: 687px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+p {
+  height: 70px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: $dark-gray;
+}
+
+h2 {
+  height: 30px;
+  font-family: SurveyorText;
+  //font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: $dark-gray;
+}
+
+h3 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 32%;
+
+  h3 {
+    height: 42px;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+.play {
+  width: 60px;
+  height: 60px;
+  border-radius: 28px;
+  background-color: $primary;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    opacity: 0.2;
+    border-radius: 48px;
+    background-color: #e8213d;
+    margin-top: -8px;
+    margin-left: -7px;
+
+  }
+}
+
+.play-icon {
+  width: 16px;
+  height: 19px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.choose-meals {
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 30px auto;
+  display: block;
+  padding-top: 11px;
+}
+
+.how-it-works {
+  height: 782px;
+}
+
+.meals-preview {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  img {
+    margin: auto;
+  }
+
+  h2 {
+    margin-bottom: 19px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.how-it-works-btn {
+  width: 185px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 20px auto;
+  display: block;
+}
+
+.box {
+  height: 806px;
+}
+
+.discount {
+  height: 900px;
+  background-color: $pale-grey;
+
+}

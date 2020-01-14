@@ -1,0 +1,73 @@
+<section>
+  <div class="hero-background">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 hero-content">
+          <h3>The Perfect <span>Cooking Ex</span>perience.</h3>
+          <p>Get everything you need to make amazing meals
+            <br> delivered in one perfectly customized box.</p>
+          <div class="play text-center">
+            <a class="play-icon" href="#">
+              <i class="fa fa-play"></i>
+            </a>
+          </div>
+          <a class="btn btn-primary choose-meals" href="#">Choose Your Meals</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="how-it-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>How it works?</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+           dolore <br> magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4" *ngFor="let mealPreview of mealsPreview">
+        <div class="meals-preview">
+          <img [src]="mealPreview.url" alt="">
+          <h2>{{mealPreview.title}}</h2>
+          <p [innerHTML]="mealPreview.subtitle"></p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <a class="btn btn-primary how-it-works-btn" href="#">How it works</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="box">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3>What’s Inside The Box?</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+           dolore <br> magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+      <div class="col-4">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="discount">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+      <div class="col-md-8">
+        <img class="float-right" src="../../assets/images/discount-bg.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<app-call-to-action-footer image=""
+                           title=""
+                           description=""
+></app-call-to-action-footer>

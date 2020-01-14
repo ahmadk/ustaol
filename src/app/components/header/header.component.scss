@@ -1,0 +1,21 @@
+@import "src/styles.scss";
+
+.nav-group {
+  li {
+    a {
+      font-size: 15px;
+      color: $dark-gray;
+    }
+  }
+}
+
+.getting-started {
+  width: 185px;
+  height: 40px;
+}
+
+.navbar {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+  background-color: #ffffff !important;
+  height: 80px !important;
+}
