@@ -10,7 +10,7 @@ type discountItemsTypes = { title: string; }[];
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
   @ViewChild('carouselComponent', {static: false}) carouselComponent: CarouselComponent;
   public mealsPreview: MealsPreviewType = [{
     title: 'Select your Meals',
@@ -63,13 +63,5 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-  }
-
-  ngAfterViewInit(): void {
-    console.log(this.carouselComponent);
-    const childNode: HTMLCollection = this.carouselComponent.el.nativeElement.children;
-    const childNode1 = childNode[0].children;
-    const element: Element = childNode1[1];
-    element.classList.remove('disabled');
   }
 }
