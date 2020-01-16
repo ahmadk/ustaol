@@ -1,4 +1,4 @@
-<section>
+<section class="hero">
   <div class="hero-background">
     <div class="container">
       <div class="row">
@@ -17,17 +17,19 @@
     </div>
   </div>
 </section>
+<!--end hero section-->
+<!--start how it works section-->
 <section class="how-it-works">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-md-12">
         <h3>How it works?</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
            dolore <br> magna aliquyam erat, sed diam voluptua.</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-4" *ngFor="let mealPreview of mealsPreview">
+      <div class="col-md-4" *ngFor="let mealPreview of mealsPreview">
         <div class="meals-preview">
           <img [src]="mealPreview.url" alt="">
           <h2>{{mealPreview.title}}</h2>
@@ -40,10 +42,12 @@
     </div>
   </div>
 </section>
+<!--end how it works section-->
+<!--start box section-->
 <section class="box">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-md-12">
         <h3>What’s Inside The Box?</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
            dolore <br> magna aliquyam erat, sed diam voluptua.</p>
@@ -53,19 +57,62 @@
     </div>
   </div>
 </section>
+<!--end box section-->
+<!--start discount section-->
 <section class="discount">
   <div class="container">
     <div class="row">
-      <div class="col-4">
-
+      <div class="col-md-4 discount-content">
+        <div class="card discount-card">
+          <div class="card-body">
+            <a class="discount-for-limited-time-only" href="">Discount for limited time only</a>
+            <h3 class="card-title mt-4">We enable people to discover <br> their cooking skills in order to just eat
+                                        right</h3>
+            <div *ngFor="let discountItem of discountItems">
+              <p class="card-text" [innerHTML]="discountItem.title"></p>
+            </div>
+            <a href="#" class="btn btn-primary discount-button">$50 Discount</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8">
-        <img class="float-right" src="../../assets/images/discount-bg.png" alt="">
+      <div class="col-md-8 discount-background">
+        <img class="float-right" src="../../assets/images/discount-bg.png" alt="discount image">
       </div>
     </div>
   </div>
 </section>
-
+<!--end discount section-->
+<!--start taste in pictures section-->
+<section class="taste-in-pictures">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Taste in pictures</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <owl-carousel-o #carouselComponent [options]="customOptions">
+          <ng-template carouselSlide>
+            <img class="slider-item-image" src="../../assets/images/home-slider-1.png" alt="slider image">
+            <p class="slider-item-title">COD CAKES</p>
+          </ng-template>
+          <ng-template carouselSlide>
+            <img class="slider-item-image" src="../../assets/images/home-slider-2.png" alt="slider image">
+            <p class="slider-item-title">THREE-BEAN ANCHO TURKEY CHILI</p>
+          </ng-template>
+          <ng-template carouselSlide>
+            <img class="slider-item-image" src="../../assets/images/home-slider-3.png" alt="slider image">
+            <p class="slider-item-title">SICILIAN-STYLE CHICKEN PARM</p>
+          </ng-template>
+          <ng-template carouselSlide>
+            <img class="slider-item-image" src="../../assets/images/home-slider-3.png" alt="slider image">
+            <p class="slider-item-title">COD CAKES</p>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+      <a href="#" class="btn btn-outline-primary see-menu-btn">See the menu</a>
+    </div>
+  </div>
+</section>
+<!--end taste in pictures section-->
 
 <app-call-to-action-footer image=""
                            title=""

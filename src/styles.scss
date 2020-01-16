@@ -14,5 +14,53 @@ $pale-grey-two: #ededf1;
   background-color: $primary !important;
   border: $primary !important;
   color: #ffffff !important;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $primary;
+  }
+}
+
+.owl-nav {
+  position: relative !important;
+
+  .owl-prev {
+    position: absolute;
+    left: -60px;
+    bottom: 174px;
+    background-color: unset !important;
+    color: #808495 !important;
+    font-size: 20px;
+
+    i {
+      font-size: 35px;
+    }
+  }
+
+  .owl-next {
+    position: absolute;
+    right: -60px;
+    bottom: 174px;
+    background-color: unset !important;
+    color: #808495 !important;
+    font-size: 34px;
+
+    i {
+      font-size: 35px;
+    }
+  }
 }
 

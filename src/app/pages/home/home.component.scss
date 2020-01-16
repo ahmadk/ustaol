@@ -21,12 +21,12 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: $dark-gray;
+  font-family: Nunito;
 }
 
 h2 {
-  height: 30px;
   font-family: SurveyorText;
-  //font-size: 25px;
+  font-size: 25px;
   font-weight: bold;
   font-stretch: normal;
   font-style: italic;
@@ -37,9 +37,14 @@ h2 {
 }
 
 h3 {
+  font-family: SurveyorText;
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
+}
+
+a {
+  font-family: Nunito;
 }
 
 .hero-content {
@@ -137,5 +142,121 @@ h3 {
 .discount {
   height: 900px;
   background-color: $pale-grey;
+}
+
+.discount-background {
+  margin-top: 100px;
+}
+
+.discount-content {
+  position: relative;
+
+  .discount-card {
+    position: absolute;
+    z-index: 1;
+    width: 570px;
+    height: 482px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-top: 229px;
+
+    .card-body {
+      .discount-for-limited-time-only {
+        width: 235px;
+        height: 24px;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: $primary;
+        text-decoration: underline;
+      }
+
+      h3 {
+        text-align: start;
+        font-weight: bold;
+        line-height: 1.14;
+        color: $dark-gray;
+      }
+
+      p {
+        text-align: start;
+        height: unset;
+        margin-top: 29px;
+
+        i {
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.67;
+          letter-spacing: normal;
+          text-align: left;
+          color: #3ea520;
+        }
+      }
+
+      .discount-button {
+        width: 510px;
+        height: 40px;
+        margin: 50px auto;
+        display: block;
+      }
+    }
+  }
+}
+
+.taste-in-pictures {
+  height: 803px;
+
+  h3 {
+    margin-top: 100px;
+  }
+}
+
+.slider-item-image {
+  width: 370px !important;
 
 }
+
+.slider-item-title {
+  height: unset;
+  line-height: 1.67;
+
+  &:before {
+    content: "";
+    background-color: #d6d6d6;
+    position: absolute;
+    width: 80%;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    height: 63%;
+    z-index: -1;
+    border-radius: 8px;
+    top: 0;
+  }
+
+  &:after {
+    content: "";
+    background-color: #d6d6d6;
+    position: absolute;
+    width: 65%;
+    right: 0;
+    bottom: 0;
+    left: 32%;
+    height: 64%;
+    z-index: -1;
+    border-radius: 8px;
+    top: 18px;
+  }
+}
+
+.see-menu-btn {
+  width: 185px;
+  height: 40px;
+  display: block;
+  margin: 50px auto;
+}
+
+
+
+

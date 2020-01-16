@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CallToActionFooterComponent } from './call-to-action-footer/call-to-action-footer.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -24,6 +26,9 @@ import { CallToActionFooterComponent } from './call-to-action-footer/call-to-act
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
