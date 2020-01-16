@@ -11,6 +11,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CallToActionFooterComponent } from './call-to-action-footer/call-to-action-footer.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     ContactUsComponent,
     CallToActionFooterComponent,
+    MenuItemComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgbModule,
     CarouselModule,
     BrowserAnimationsModule,
-
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

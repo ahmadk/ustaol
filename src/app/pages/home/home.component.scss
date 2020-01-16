@@ -20,7 +20,7 @@ p {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
-  color: $dark-gray;
+  color: $text;
   font-family: Nunito;
 }
 
@@ -33,7 +33,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: normal;
   text-align: center;
-  color: $dark-gray;
+  color: $text;
 }
 
 h3 {
@@ -176,7 +176,7 @@ a {
         text-align: start;
         font-weight: bold;
         line-height: 1.14;
-        color: $dark-gray;
+        color: $text;
       }
 
       p {
@@ -223,7 +223,7 @@ a {
 
   &:before {
     content: "";
-    background-color: #d6d6d6;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 80%;
     right: 0;
@@ -237,7 +237,7 @@ a {
 
   &:after {
     content: "";
-    background-color: #d6d6d6;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 65%;
     right: 0;
