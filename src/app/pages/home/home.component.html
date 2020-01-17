@@ -65,7 +65,7 @@
       <div class="col-md-4 discount-content">
         <div class="card discount-card">
           <div class="card-body">
-            <a class="discount-for-limited-time-only" href="">Discount for limited time only</a>
+            <a class="discount-for-limited-time-only" href="#">Discount for limited time only</a>
             <h3 class="card-title mt-4">We enable people to discover <br> their cooking skills in order to just eat
                                         right</h3>
             <div *ngFor="let discountItem of discountItems">
@@ -90,21 +90,11 @@
         <h3>Taste in pictures</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
         <owl-carousel-o #carouselComponent [options]="customOptions">
-          <ng-template carouselSlide>
-            <img class="slider-item-image" src="../../assets/images/home-slider-1.png" alt="slider image">
-            <p class="slider-item-title">COD CAKES</p>
-          </ng-template>
-          <ng-template carouselSlide>
-            <img class="slider-item-image" src="../../assets/images/home-slider-2.png" alt="slider image">
-            <p class="slider-item-title">THREE-BEAN ANCHO TURKEY CHILI</p>
-          </ng-template>
-          <ng-template carouselSlide>
-            <img class="slider-item-image" src="../../assets/images/home-slider-3.png" alt="slider image">
-            <p class="slider-item-title">SICILIAN-STYLE CHICKEN PARM</p>
-          </ng-template>
-          <ng-template carouselSlide>
-            <img class="slider-item-image" src="../../assets/images/home-slider-3.png" alt="slider image">
-            <p class="slider-item-title">COD CAKES</p>
+          <ng-template carouselSlide *ngFor="let slide of tastePicturesSlides">
+            <div class="slide-image">
+              <img class="slider-item-image" src="{{slide.url}}" alt="{{slide.alt}}">
+            </div>
+            <p class="slider-item-title">{{slide.subtitle}}</p>
           </ng-template>
         </owl-carousel-o>
       </div>
@@ -113,6 +103,156 @@
   </div>
 </section>
 <!--end taste in pictures section-->
+<!--start gallery section-->
+<section class="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 gallery-content">
+        <h3>Prepare It, Enjoy it, Tag it #ustaOl</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          <br>dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 gallery-first-image">
+        <img src="../../assets/images/gallary-1.png" alt="">
+      </div>
+      <div class="col-md-6">
+        <div class="row gallery-standard-image">
+          <div class="col-md-6" *ngFor="let galleryStandardImage of galleryStandardImages">
+            <img src="{{galleryStandardImage.url}}" alt="{{galleryStandardImage.alt}}">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row gallery-standard-image gallery-standard-image-2">
+          <div class="col-md-6">
+            <img class="float-right" src="../../assets/images/gallary-6.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <img class="float-right" src="../../assets/images/gallary-7.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 gallery-last-image gallery-standard-image-2">
+        <img src="../../assets/images/gallary-8.png" alt="">
+      </div>
+    </div>
+    <p class="follow-us">Follow us on <a href="">@ustaol</a></p>
+  </div>
+</section>
+<!--end gallery section-->
+<!--start opinions take proud of section-->
+<section class="opinions-take-proud-of">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="opinions-take-proud-content">
+          <h3>Opinions we take proud of</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card opinions-take-proud-card-white">
+              <i class="fa fa-quote-left"></i>
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                     eos et accusam et justo duo dolores.</p>
+                <h2>John Doe, Designer / Acme</h2>
+                <img src="../../../assets/images/me-demo-day.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card opinions-take-proud-card-light">
+              <div class="card-body">
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h2>John Doe, Designer / Acme</h2>
+                <img src="../../../assets/images/me-demo-day.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card opinions-take-proud-card-light">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                     tempor invidunt ut labore et dolore magna.</p>
+                <h2>John Doe, Designer / Acme</h2>
+                <img src="../../../assets/images/me-demo-day.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card opinions-take-proud-card-white">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <h2>John Doe, Designer / Acme</h2>
+                <img src="../../../assets/images/me-demo-day.png" alt="">
+                <i class="fa fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end Opinions take proud of section-->
+<!--start as seen in media-->
+<section class="as-seen-in-media">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>As seen in media</p>
+      </div>
+      <div class="col" *ngFor="let mediaCompanyLogo  of mediaCompanyLogos">
+        <a href="">
+          <img class="img-fluid" src="{{mediaCompanyLogo.url}}" alt="{{mediaCompanyLogo.alt}}">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end  as seen in media-->
+<!--start as seen in media-->
+<section class="cheap-intuitive">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11 cheap-intuitive-content">
+        <h3>Cheap & Intiuative</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        <a class="btn btn-primary" href="">View Our Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end  as seen in media-->
+<!--start  subscribe-->
+<section class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="subscribe-content">
+          <h3>Stay posted? Sounds good?</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter email address"
+                 aria-label="Recipient's email"
+                 aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end subscribe-->
 
 <app-call-to-action-footer image=""
                            title=""

@@ -20,7 +20,7 @@ p {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
-  color: $dark-gray;
+  color: $text;
   font-family: Nunito;
 }
 
@@ -33,7 +33,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: normal;
   text-align: center;
-  color: $dark-gray;
+  color: $text;
 }
 
 h3 {
@@ -41,6 +41,7 @@ h3 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 a {
@@ -74,11 +75,10 @@ a {
     width: 75px;
     height: 75px;
     opacity: 0.2;
-    border-radius: 48px;
+    border-radius: 100%;
     background-color: #e8213d;
     margin-top: -8px;
     margin-left: -7px;
-
   }
 }
 
@@ -141,7 +141,7 @@ a {
 
 .discount {
   height: 900px;
-  background-color: $pale-grey;
+  background-color: $background;
 }
 
 .discount-background {
@@ -176,7 +176,7 @@ a {
         text-align: start;
         font-weight: bold;
         line-height: 1.14;
-        color: $dark-gray;
+        color: $text;
       }
 
       p {
@@ -212,14 +212,10 @@ a {
   }
 }
 
-.slider-item-image {
-  width: 370px !important;
-
-}
-
-.slider-item-title {
-  height: unset;
-  line-height: 1.67;
+.slide-image {
+  img {
+    width: 370px !important;
+  }
 
   &:before {
     content: "";
@@ -233,6 +229,7 @@ a {
     z-index: -1;
     border-radius: 8px;
     top: 0;
+    box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
   }
 
   &:after {
@@ -250,11 +247,231 @@ a {
   }
 }
 
+.slider-item-title {
+  height: unset;
+  line-height: 1.67;
+}
+
 .see-menu-btn {
   width: 185px;
   height: 40px;
   display: block;
   margin: 50px auto;
+}
+
+.gallery {
+  height: 1352px;
+  background-image: url("../../../assets/images/gallery-section-bg.png");
+  background-color: $background;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .gallery-content {
+    margin-top: 100px;
+  }
+
+  .gallery-first-image {
+    img {
+      width: 554px;
+      height: 578px;
+      float: right;
+    }
+  }
+
+  .gallery-standard-image {
+    div {
+      margin-bottom: 31px;
+    }
+
+    img {
+      width: 270px;
+      height: 274px;
+    }
+  }
+
+  .gallery-last-image {
+    img {
+      width: 554px;
+      height: 274px;
+    }
+  }
+
+  .follow-us {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+
+    a {
+      color: $text;
+      border-bottom: $text solid 2px;
+      font-weight: bold;
+    }
+  }
+}
+
+.opinions-take-proud-of {
+  height: 1006px;
+
+  .opinions-take-proud-content {
+    margin-top: 100px;
+  }
+
+  .opinions-take-proud-card-light {
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 5px 9px 40px 0 rgba(0, 0, 0, 0.16);
+    background-color: #7c8b9b;
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+    .card-body {
+      p {
+        margin: 32px 37px 70px 37px;
+        color: #ffffff;
+      }
+
+      h2 {
+        margin-right: 25px;
+        text-align: right;
+        color: #ffffff;
+      }
+
+      img {
+        margin: -20px 7px;
+        width: 85px;
+        height: 85px;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .opinions-take-proud-card-white {
+    height: 270px;
+    border-radius: 8px;
+    box-shadow: 5px 9px 40px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-left: 30px;
+    margin-bottom: 50px;
+
+    .fa-quote-right {
+      font-size: 75px;
+      position: absolute;
+      right: 18px;
+      color: #e8213d;
+    }
+
+    .fa-quote-left {
+      font-size: 75px;
+      position: absolute;
+      top: -35px;
+      left: 18px;
+      color: $primary;
+    }
+
+
+    .card-body {
+      p {
+        margin: 32px 37px 70px 37px;
+      }
+
+      h2 {
+        margin-right: 25px;
+        text-align: right;
+      }
+
+      img {
+        margin: -20px 7px;
+        width: 85px;
+        height: 85px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+.as-seen-in-media {
+  height: 259px;
+}
+
+.cheap-intuitive {
+  background-image: url("../../../assets/images/banner-cta.png");
+  height: 436px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .cheap-intuitive-content {
+    margin-top: 100px;
+    background-color: #ffffff;
+    height: 236px;
+    opacity: 0.9;
+    border-radius: 2px;
+
+    h3 {
+      padding-top: 30px;
+    }
+
+    p {
+      height: unset;
+    }
+
+    a {
+      width: 185px;
+      height: 50px;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.subscribe {
+  height: 228px;
+
+  .subscribe-content {
+    margin-top: 50px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-family: SurveyorText;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $text;
+
+  }
+
+  p {
+    height: unset;
+    font-size: 13px;
+  }
+
+  .input-group {
+    width: 535px;
+    margin: auto;
+
+    .input-group-append {
+      button {
+        width: 145px;
+        background-color: $text !important;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+
+      }
+    }
+  }
 }
 
 

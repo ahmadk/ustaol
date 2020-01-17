@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 $primary: #e8213d;
-$dark-gray: #393939;
-$pale-grey: #f5f5f9;
-$pale-grey-two: #ededf1;
+$text: #393939;
+$background: #f5f5f9;
+$background-dark: #ededf1;
 
 .bg {
   background-color: #ffffff;
@@ -63,4 +63,18 @@ $pale-grey-two: #ededf1;
     }
   }
 }
+
+.owl-dot {
+  &.active {
+    span {
+      background-color: #e8213d!important;
+    }
+  }
+  &:hover {
+    span {
+      background-color: #e8213d!important;
+    }
+  }
+}
+
 

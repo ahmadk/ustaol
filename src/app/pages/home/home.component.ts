@@ -4,6 +4,10 @@ import { CarouselComponent, SlidesOutputData } from 'ngx-owl-carousel-o';
 
 type MealsPreviewType = { subtitle: string; title: string; url: string }[];
 type discountItemsTypes = { title: string; }[];
+type slidesStoreTypes = { url: string; subtitle: string; alt: string }[];
+type galleryStandardImage = { url: string; alt: string }[];
+type mediaCompanyLogo = { url: string; alt: string }[];
+
 
 @Component({
   selector: 'app-home',
@@ -31,6 +35,56 @@ export class HomeComponent implements OnInit {
     title: ' <i class="fa fa-check mr-2"></i> Consetetur sadipscing elitr labore et dolore.',
   }, {
     title: ' <i class="fa fa-check mr-2"></i> Sed diam nonumy eirmod tempor invidunt.',
+  }];
+  public tastePicturesSlides: slidesStoreTypes = [{
+    url: '../../assets/images/home-slider-1.png',
+    subtitle: 'COD CAKES',
+    alt: 'slider image',
+  }, {
+    url: '../../assets/images/home-slider-2.png',
+    subtitle: 'THREE-BEAN ANCHO TURKEY CHILI',
+    alt: 'slider image',
+  }, {
+    url: '../../assets/images/home-slider-3.png',
+    subtitle: 'SICILIAN-STYLE CHICKEN PARM',
+    alt: 'slider image',
+  }, {
+    url: '../../assets/images/home-slider-3.png',
+    subtitle: 'SICILIAN-STYLE CHICKEN PARM',
+    alt: 'slider image',
+  }];
+  public galleryStandardImages: galleryStandardImage = [{
+    url: '../../assets/images/gallary-2.png',
+    alt: 'gallary image',
+  }, {
+    url: '../../assets/images/gallary-3.png',
+    alt: 'gallary image',
+  }, {
+    url: '../../assets/images/gallary-4.png',
+    alt: 'gallary image',
+  }, {
+    url: '../../assets/images/gallary-5.png',
+    alt: 'gallary image',
+  }];
+
+  public mediaCompanyLogos: mediaCompanyLogo = [{
+    url: '../../assets/images/company-logo-1.png',
+    alt: 'logo',
+  }, {
+    url: '../../assets/images/company-logo-2.png',
+    alt: 'logo',
+  }, {
+    url: '../../assets/images/company-logo-3.png',
+    alt: 'logo',
+  }, {
+    url: '../../assets/images/company-logo-4.png',
+    alt: 'logo',
+  }, {
+    url: '../../assets/images/company-logo-5.png',
+    alt: 'logo',
+  }, {
+    url: '../../assets/images/company-logo-6.png',
+    alt: 'logo',
   }];
 
   customOptions: OwlOptions = {
