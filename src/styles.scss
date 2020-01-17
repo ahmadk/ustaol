@@ -2,8 +2,8 @@
 
 $primary: #e8213d;
 $text: #393939;
-$pale-grey: #f5f5f9;
-$pale-grey-two: #ededf1;
+$background: #f5f5f9;
+$background-dark: #ededf1;
 $text-light: rgba(57, 57, 57, 0.5);
 
 .bg {
@@ -68,12 +68,13 @@ $text-light: rgba(57, 57, 57, 0.5);
 .owl-dot {
   &.active {
     span {
-      background-color: #e8213d!important;
+      background-color: #e8213d !important;
     }
   }
+
   &:hover {
     span {
-      background-color: #e8213d!important;
+      background-color: #e8213d !important;
     }
   }
 }
