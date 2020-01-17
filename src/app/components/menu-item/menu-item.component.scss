@@ -1,0 +1,83 @@
+@import "../../../styles.scss";
+
+.menu-item-container{
+  height:350px;
+  position: relative;
+  width: 370px;
+}
+
+.slider-item-image {
+  width: 370px !important;
+
+}
+
+.slider-item-title {
+  height: unset;
+  line-height: 1.67;
+
+  &:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 76%;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    height: 60%;
+    z-index: -1;
+    border-radius: 8px;
+    top: -3px;
+  }
+
+  &:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 67%;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+    height: 60%;
+    z-index: -1;
+    border-radius: 8px;
+    top: 18px;
+  }
+}
+
+.meal-title{
+  font-family: SurveyorText;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  color: $primary;
+}
+
+.meal-desc{
+  font-family: Nunito;
+  font-size: 15px;
+  line-height: 1.67;
+  color: $text-light;
+}
+
+.desc-container{
+  margin-left: 20px;
+}
+
+.time{
+  font-family: Nunito;
+  font-size: 15px;
+  line-height: 1.67;
+  color: $text;
+}
+
+.fa-clock-o{
+  font-size: 15px;
+  line-height: 1.67;
+  color: $text-light;
+}
+
+.title-and-desc{
+  height: 90px;
+}
+

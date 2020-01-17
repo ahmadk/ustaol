@@ -219,7 +219,7 @@ a {
 
   &:before {
     content: "";
-    background-color: #d6d6d6;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 80%;
     right: 0;
@@ -234,7 +234,7 @@ a {
 
   &:after {
     content: "";
-    background-color: #d6d6d6;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 65%;
     right: 0;

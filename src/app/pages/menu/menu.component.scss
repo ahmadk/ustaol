@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.menu-item{
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+.menu-header-text{
+  font-family: SurveyorText;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  color: $text;
+}
+
+.menu-header{
+  margin-top: 70px;
+}
+
+.btn-primary{
+  border: solid 1px !important;
+  border-color: $primary !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  color: $text !important;
+  height: 60px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+}
+
+.selected{
+  background-color: $primary !important;
+  border-radius: 4px !important;
+  color: white !important;
+  height: 68px !important;
+  margin-top: -3px;
+}
