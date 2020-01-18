@@ -30,11 +30,11 @@ export class HomeComponent implements OnInit {
     url: '../../assets/images/cooking.png',
   }];
   public discountItems: discountItemsTypes = [{
-    title: '<i class="fa fa-check mr-2"></i> Lorem ipsum dolor sit amet ut  magna aliquyam.',
+    title: 'Lorem ipsum dolor sit amet ut  magna aliquyam.',
   }, {
-    title: ' <i class="fa fa-check mr-2"></i> Consetetur sadipscing elitr labore et dolore.',
+    title: 'Consetetur sadipscing elitr labore et dolore.',
   }, {
-    title: ' <i class="fa fa-check mr-2"></i> Sed diam nonumy eirmod tempor invidunt.',
+    title: 'Sed diam nonumy eirmod tempor invidunt.',
   }];
   public tastePicturesSlides: slidesStoreTypes = [{
     url: '../../assets/images/home-slider-1.png',
@@ -90,7 +90,7 @@ export class HomeComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,

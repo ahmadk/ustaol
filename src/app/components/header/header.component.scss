@@ -12,18 +12,45 @@
 .getting-started {
   width: 185px;
   height: 40px;
-  font-family: SurveyorText;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.17;
   letter-spacing: normal;
-
+  padding: 10px 27px 9px 27px;
 }
 
 .navbar {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
   background-color: #ffffff !important;
   height: 80px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    .navbar-nav {
+      background-color: white !important;
+      position: relative !important;
+      z-index: 1 !important;
+      width: 100%;
+      margin-top: 13px;
+      padding-left: 20px;
+      border: 1px solid #ffffff;
+
+      li {
+        color: #fff;
+        display: block;
+        margin: 0;
+        padding: 10px 5%;
+        text-align: left;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 90%;
+        border-bottom: 2px solid #393939;
+      }
+
+    }
+  }
+
 }

@@ -4,7 +4,6 @@
   background-image: url("../../../assets/images/hero-bg.png");
   width: auto;
   height: 687px;
-  position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,8 +48,7 @@ a {
 }
 
 .hero-content {
-  position: absolute;
-  top: 32%;
+  margin: 19% auto;
 
   h3 {
     height: 42px;
@@ -59,15 +57,23 @@ a {
   }
 }
 
-.play {
+.video-thumbnail {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.play-btn {
+  background: $primary;
+  border-radius: 50%;
+  line-height: 108px;
+  animation: animate 2s linear infinite;
+  cursor: pointer;
   width: 60px;
   height: 60px;
-  border-radius: 28px;
-  background-color: $primary;
-  margin: auto;
-  display: grid;
-  align-items: center;
-  justify-items: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   &:before {
     content: "";
@@ -79,6 +85,30 @@ a {
     background-color: #e8213d;
     margin-top: -8px;
     margin-left: -7px;
+  }
+}
+
+.play-btn i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 8px;
+  position: absolute;
+  top: 19px;
+  left: 16px;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgb(232, 33, 61);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 193, 7, 0);
   }
 }
 
@@ -100,9 +130,9 @@ a {
   width: 250px;
   height: 50px;
   border-radius: 4px;
-  margin: 30px auto;
+  margin: auto;
   display: block;
-  padding-top: 11px;
+  padding: 13px;
 }
 
 .how-it-works {
@@ -133,6 +163,7 @@ a {
   border-radius: 4px;
   margin: 20px auto;
   display: block;
+  padding: 8px;
 }
 
 .box {
@@ -195,7 +226,7 @@ a {
       }
 
       .discount-button {
-        width: 510px;
+        width: 100%;
         height: 40px;
         margin: 50px auto;
         display: block;
@@ -213,9 +244,6 @@ a {
 }
 
 .slide-image {
-  img {
-    width: 370px !important;
-  }
 
   &:before {
     content: "";
@@ -273,8 +301,8 @@ a {
 
   .gallery-first-image {
     img {
-      width: 554px;
-      height: 578px;
+      width: 100%;
+      height: auto;
       float: right;
     }
   }
@@ -285,15 +313,15 @@ a {
     }
 
     img {
-      width: 270px;
-      height: 274px;
+      width: 100%;
+      height: auto;
     }
   }
 
   .gallery-last-image {
     img {
-      width: 554px;
-      height: 274px;
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -422,6 +450,7 @@ a {
       height: 50px;
       display: block;
       margin: auto;
+      padding: 13px;
     }
   }
 }
@@ -474,6 +503,71 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    height: auto !important;
+
+    .gallery-row {
+      margin-top: 20px;
+    }
+  }
+  .opinions-take-proud-of {
+    height: 1597px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .how-it-works {
+    height: 1292px;
+  }
+  .discount-card {
+    width: 90% !important;
+    height: auto !important;
+    margin-top: 100px !important;
+  }
+  .subscribe {
+    .input-group {
+      width: 100% !important;
+      margin: auto !important;
+    }
+  }
+  .gallery-row {
+    margin-top: 35px !important;
+  }
+  .opinions-take-proud-card-white, .opinions-take-proud-card-light {
+    margin-left: 0 !important;
+
+    p {
+      font-size: 15px;
+    }
+
+    img {
+      margin: -10px 7px !important;
+    }
+  }
+  .discount-background {
+    display: none;
+  }
+  .discount-content {
+    width: 96% !important;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .opinions-take-proud-card-white, .opinions-take-proud-card-light {
+
+    p {
+      font-size: 14px;
+      margin: 38px 0 0 0 !important;
+    }
+
+    h2 {
+      font-size: 15px !important;
+      margin-top: 73px;
+    }
+  }
+}
 
 
 

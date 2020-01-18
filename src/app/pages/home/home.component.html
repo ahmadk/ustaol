@@ -6,10 +6,12 @@
           <h3>The Perfect <span>Cooking Ex</span>perience.</h3>
           <p>Get everything you need to make amazing meals
             <br> delivered in one perfectly customized box.</p>
-          <div class="play text-center">
-            <a class="play-icon" href="#">
-              <i class="fa fa-play"></i>
-            </a>
+          <div class="video-thumbnail">
+            <div class="play-btn">
+              <a class="play-icon" href="#">
+                <i class="fa fa-play"></i>
+              </a>
+            </div>
           </div>
           <a class="btn btn-primary choose-meals" href="#">Choose Your Meals</a>
         </div>
@@ -69,14 +71,18 @@
             <h3 class="card-title mt-4">We enable people to discover <br> their cooking skills in order to just eat
                                         right</h3>
             <div *ngFor="let discountItem of discountItems">
-              <p class="card-text" [innerHTML]="discountItem.title"></p>
+              <p class="card-text">
+                <i class="fa fa-check mr-2"></i>
+                {{discountItem.title}}
+              </p>
+
             </div>
             <a href="#" class="btn btn-primary discount-button">$50 Discount</a>
           </div>
         </div>
       </div>
       <div class="col-md-8 discount-background">
-        <img class="float-right" src="../../assets/images/discount-bg.png" alt="discount image">
+        <img class="float-right img-fluid" src="../../assets/images/discount-bg.png" alt="discount image">
       </div>
     </div>
   </div>
@@ -92,7 +98,7 @@
         <owl-carousel-o #carouselComponent [options]="customOptions">
           <ng-template carouselSlide *ngFor="let slide of tastePicturesSlides">
             <div class="slide-image">
-              <img class="slider-item-image" src="{{slide.url}}" alt="{{slide.alt}}">
+              <img src="{{slide.url}}" alt="{{slide.alt}}">
             </div>
             <p class="slider-item-title">{{slide.subtitle}}</p>
           </ng-template>
@@ -113,7 +119,7 @@
           <br>dolore magna aliquyam erat, sed diam voluptua.</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row gallery-row">
       <div class="col-md-6 gallery-first-image">
         <img src="../../assets/images/gallary-1.png" alt="">
       </div>
@@ -134,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 gallery-last-image gallery-standard-image-2">
+      <div class="col-md-6 gallery-last-image">
         <img src="../../assets/images/gallary-8.png" alt="">
       </div>
     </div>
@@ -152,7 +158,7 @@
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card opinions-take-proud-card-white">
               <i class="fa fa-quote-left"></i>
               <div class="card-body">
@@ -164,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card opinions-take-proud-card-light">
               <div class="card-body">
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -175,7 +181,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card opinions-take-proud-card-light">
               <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -185,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card opinions-take-proud-card-white">
               <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -222,10 +228,12 @@
 <section class="cheap-intuitive">
   <div class="container">
     <div class="row">
-      <div class="col-md-11 cheap-intuitive-content">
-        <h3>Cheap & Intiuative</h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-        <a class="btn btn-primary" href="">View Our Plans</a>
+      <div class="col-md-12">
+        <div class="cheap-intuitive-content">
+          <h3>Cheap & Intiuative</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+          <a class="btn btn-primary" href="">View Our Plans</a>
+        </div>
       </div>
     </div>
   </div>
