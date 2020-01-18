@@ -1,8 +1,10 @@
-@import "src/styles.scss";
+@import "src/variables";
 
 .nav-group {
   li {
     a {
+      font-family: SurveyorText, serif;
+      font-weight: bold;
       font-size: 15px;
       color: $text;
     }
@@ -18,7 +20,7 @@
   font-style: normal;
   line-height: 1.17;
   letter-spacing: normal;
-  padding: 10px 27px 9px 27px;
+  padding: 10px 27px 10px 27px;
 }
 
 .navbar {
