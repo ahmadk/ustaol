@@ -1,23 +1,143 @@
 <section class="meal-show">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="meal-content">
           <div class="meal-date">
             <i class="fa fa-clock-o d-inline"></i>
-            <p class="time d-inline ml-2">30 min</p>
+            <span class="time d-inline ml-2">30 min</span>
           </div>
           <div class="meal-header">
             <h2>Classic Macaroni and Tomatoes</h2>
             <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV</p>
           </div>
-
+          <div class="meal-body">
+            <div class="servings">
+              <i class="fa fa-address-book"></i>
+              <span>2 Servings</span>
+              <span class="border-style"></span>
+              <i class="fa fa-address-book ml-3"></i>
+              <span>680 Cals/serving</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+               et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+               rebum. Stet clita kasd gubergren, no sea takimata sanctus…</p>
+            <a class="btn btn-primary" href="#!">Get this meal</a>
+          </div>
         </div>
       </div>
-      <div class="col-6 meal-image">
-        <a class="btn btn-outline-primary" href="#">Chicken</a>
-        <img src="../../../assets/images/meal-show.png" alt="">
+      <div class="col-md-6 meal-image">
+        <a class="btn btn-outline-primary" href="#!">Chicken</a>
+        <img class="img-fluid" src="../../../assets/images/meal-show.png" alt="">
       </div>
     </div>
   </div>
+</section>
+<section class="ingredients">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Ingredients</h2>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>What we send</h3>
+            <div class="d-block mb-2 position-relative" *ngFor="let ingredientItem of ingredientItems">
+              <img src="{{ingredientItem.url}}" alt="{{ingredientItem.alt}}">
+              <div class="image-title">
+                <span class="category-ingredient">{{ingredientItem.category}}</span>
+                <span class="title-ingredient">{{ingredientItem.title}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center serving-amount">
+              <p class="pagination-title">Serving amount</p>
+              <form [formGroup]="checkboxGroupForm">
+                <div class="btn-group btn-group-toggle">
+                  <label class="btn-primary selected" ngbButtonLabel>
+                    <input type="checkbox" formControlName="left" ngbButton>2
+                  </label>
+                  <label class="btn-primary pagination-btn" ngbButtonLabel>
+                    <input type="checkbox" formControlName="middle" ngbButton>4
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="d-block mb-2 position-relative"
+                 *ngFor="let ingredientColumnTowItem of ingredientColumnTowItems">
+              <img src="{{ingredientColumnTowItem.url}}" alt="">
+              <div class="image-title">
+                <span class="category-ingredient">{{ingredientColumnTowItem.category}}</span>
+                <span class="title-ingredient">{{ingredientColumnTowItem.title}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>What you need</h3>
+        <div class="what-you-need">
+          <div class="d-block mb-2 position-relative ml-4">
+            <img src="../../assets/images/ingredients/ingredient-11.png" alt="">
+            <div class="image-title">
+              <span class="category-ingredient">1 Unit</span>
+              <span class="title-ingredient">Ground Beef</span>
+            </div>
+          </div>
+          <div class="d-block mb-2 position-relative ml-4">
+            <img src="../../assets/images/ingredients/ingredient-12.png" alt="">
+            <div class="image-title">
+              <span class="category-ingredient">1 Unit</span>
+              <span class="title-ingredient">Ground Beef</span>
+            </div>
+          </div>
+          <div class="d-block mb-2 position-relative ml-4">
+            <img src="../../assets/images/ingredients/ingredient-13.png" alt="">
+            <div class="image-title">
+              <span class="category-ingredient">1 Unit</span>
+              <span class="title-ingredient">Ground Beef</span>
+            </div>
+          </div>
+          <div class="ml-4 what-you-use">
+            <h1>What you use</h1>
+            <div>
+              <i class="fa fa-check mr-2"></i>
+              <p class="d-inline-block">Lorem ipsum dolor.</p>
+            </div>
+            <div>
+              <i class="fa fa-check mr-2"></i>
+              <p class="d-inline-block">Lorem ipsum dolor.</p>
+            </div>
+            <div>
+              <i class="fa fa-check mr-2"></i>
+              <p class="d-inline-block">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="instructions">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="instructions-title">Instructions</h2>
+        <p class="instructions-subtitle">step-by-step</p>
+        <div class="row">
+          <div class="col-md-6 mt-4" *ngFor="let instruction of instructions">
+            <img class="img-fluid" src="{{instruction.url}}" alt="{{instruction.alt}}">
+            <div class="instructions-content">
+              <span class="number-of-step">{{instruction.number}}</span>
+              <h3 class="title-of-step">{{instruction.title}}</h3>
+              <p class="paragraph-of-step">{{instruction.paragraph}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>

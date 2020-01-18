@@ -1,23 +1,48 @@
-@import "src/styles.scss";
+@import "src/variables";
 
+
+h2 {
+  font-family: SurveyorText, serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text;
+}
+
+h3 {
+  font-family: SurveyorText, serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
 
 .meal-show {
   margin-top: 70px;
+  margin-bottom: 100px;
 
   .meal-image {
     a {
       position: absolute;
-      right: 0;
+      right: 7%;
       top: 16px;
       border-radius: 15px;
       border: solid 1px #e8213d;
       background-color: #f5f5f9;
       width: 82px;
       height: 30px;
-      font-family: Nunito;
+      font-family: Nunito, serif;
       font-size: 13px;
       line-height: 1.31;
       letter-spacing: normal;
+      color: $primary;
+
+      &:active {
+        color: $primary;
+      }
     }
   }
 
@@ -30,23 +55,25 @@
         color: $text-light;
       }
 
-      p {
-        font-family: Nunito;
+      span {
+        font-family: Nunito, serif;
         font-size: 15px;
         line-height: 1.67;
         text-align: left;
         color: $text;
+
       }
     }
 
     .meal-header {
       h2 {
+        font-family: SurveyorText, serif;
         font-size: 35px;
         font-weight: bold;
         font-style: italic;
         line-height: 1.14;
-        color: $primary;
         text-align: left;
+        color: $primary;
       }
 
       p {
@@ -56,6 +83,229 @@
         text-align: left;
       }
     }
+
+    .meal-body {
+      margin-top: 50px;
+
+      .servings {
+        i {
+          font-size: 24px;
+          line-height: 1;
+          text-align: left;
+          color: $primary;
+
+        }
+
+        span {
+          margin-left: 20px;
+          font-family: Nunito, serif;
+          font-size: 14px;
+          line-height: 1.64;
+          text-align: left;
+          color: $text;
+        }
+
+        .border-style {
+          border: solid 1px $text-light;
+          margin-left: 13px
+        }
+      }
+
+      p {
+        margin-top: 15px;
+        font-family: Nunito, serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: $text;
+      }
+
+      a {
+        width: 185px;
+        height: 50px;
+        padding: 10px;
+        margin-top: 55px;
+      }
+    }
+  }
+}
+
+.ingredients {
+  margin-bottom: 66px;
+
+  h2 {
+    font-family: SurveyorText, serif;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: left;
+    color: $primary;
+    margin-bottom: 50px;
   }
 
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text;
+    margin-bottom: 59px;
+  }
+
+  .pagination-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: right;
+    color: $text;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .serving-amount {
+    margin-bottom: 43px;
+  }
+
+  .pagination-btn {
+    border: solid 1px $primary !important;
+    background-color: $background !important;
+    color: $text !important;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0;
+  }
+
+  .selected {
+    width: 50px;
+    height: 50px;
+    background-color: $primary !important;
+    border-radius: 4px !important;
+    color: white !important;
+    margin-top: -3px;
+    padding: 12px;
+  }
+
+  .image-title {
+    display: inline-block;
+    margin-left: 20px;
+
+    .title-ingredient {
+      font-family: Nunito, serif;
+      font-size: 15px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text;
+    }
+
+    .category-ingredient {
+      position: absolute;
+      font-family: Nunito, serif;
+      font-size: 13px;
+      line-height: 1;
+      text-align: left;
+      color: $text-light;
+      top: 13px;
+    }
+  }
+
+  .what-you-need {
+    border-left: solid 1px $text-light;
+    height: 83%;
+  }
+
+  .what-you-use {
+    h1 {
+      font-family: SurveyorText, serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text;
+
+    }
+
+    i {
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+      color: #3ea520;
+    }
+  }
 }
+
+.instructions {
+  .instructions-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    color: $primary;
+  }
+
+  .instructions-subtitle {
+    font-family: Nunito, serif;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: left;
+    color: $text;
+  }
+
+  .number-of-step {
+    width: 27px;
+    height: 27px;
+    background-color: $primary;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    font-family: Nunito, serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 10px;
+    margin-top: 17px;
+  }
+
+  .title-of-step {
+    font-family: SurveyorText, serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+    color: $text;
+    display: inline-block;
+  }
+
+  .paragraph-of-step {
+    font-family: Nunito, serif;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: left;
+    color: $text;
+  }
+}
+
+
+
