@@ -1,4 +1,4 @@
-@import "src/styles.scss";
+@import "src/variables";
 
 .hero-background {
   background-image: url("../../../assets/images/hero-bg.png");
@@ -24,7 +24,7 @@ p {
 }
 
 h2 {
-  font-family: SurveyorText;
+  font-family: SurveyorText, serif;
   font-size: 25px;
   font-weight: bold;
   font-stretch: normal;
@@ -36,7 +36,7 @@ h2 {
 }
 
 h3 {
-  font-family: SurveyorText;
+  font-family: SurveyorText, serif;
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
@@ -464,7 +464,7 @@ a {
 
   h3 {
     margin-bottom: 10px;
-    font-family: SurveyorText;
+    font-family: SurveyorText, serif;
     font-size: 25px;
     font-weight: bold;
     font-style: italic;
