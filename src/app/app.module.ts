@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MealShowComponent } from './pages/meal-show/meal-show.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CallToActionFooterComponent,
     MenuItemComponent,
     MenuComponent,
+    MealShowComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
