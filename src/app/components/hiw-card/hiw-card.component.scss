@@ -1,0 +1,48 @@
+@import "src/variables";
+
+.left-side {
+}
+
+.right-side {
+}
+
+.path {
+  height: fit-content;
+}
+
+.parent {
+  height: 323px !important;
+  background: white;
+}
+
+.ellipse {
+  width: 30px;
+  height: 30px;
+  background-color: $primary;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.number {
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 5px;
+
+  &::after {
+    content: ".";
+  }
+}
+
+.title {
+  font-family: SurveyorText;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
+  color: $primary;
+}
