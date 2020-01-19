@@ -1,0 +1,103 @@
+@import "src/variables";
+
+.map {
+  background-image: url("../../../assets/images/map.png");
+  height: 430px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .card {
+    margin-top: 57px;
+
+    .card-body {
+      height: 316px;
+      padding-top: 46px;
+
+      .card-title {
+        font-family: SurveyorText, serif;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 0.72;
+        text-align: left;
+        color: $primary;
+        margin-bottom: 25px;
+      }
+
+      .card-text {
+        font-family: Nunito, serif;
+        font-size: 13px;
+        line-height: 1.54;
+        text-align: left;
+        color: $text;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 24px;
+
+        li {
+          font-family: Nunito, serif;
+          font-size: 15px;
+          line-height: 1.67;
+          text-align: left;
+          color: $text;
+        }
+      }
+    }
+
+    .social-media-icons {
+      a {
+        margin-right: 46px;
+        font-size: 20px;
+        line-height: 1.25;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contact-form {
+  background-color: $background-dark;
+  height: 750px;
+
+  .wael {
+    margin-top: 70px;
+
+    h3 {
+      font-family: SurveyorText, serif;
+      font-size: 35px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text;
+      margin-bottom: 40px;
+    }
+
+    label {
+      font-family: Nunito, serif;
+      font-size: 13px;
+      line-height: 1.31;
+      text-align: left;
+      color: $text;
+    }
+
+    .form-control {
+      border-radius: 6px;
+      border: solid 0.8px $text-light;
+      background-color: #ffffff;
+    }
+
+    button {
+      height: 40px;
+      border-radius: 4px;
+      background-color: $primary;
+    }
+  }
+}
