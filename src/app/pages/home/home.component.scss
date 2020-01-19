@@ -82,7 +82,7 @@ a {
     height: 75px;
     opacity: 0.2;
     border-radius: 100%;
-    background-color: #e8213d;
+    background-color: $primary;
     margin-top: -8px;
     margin-left: -7px;
   }
@@ -221,7 +221,7 @@ a {
           line-height: 1.67;
           letter-spacing: normal;
           text-align: left;
-          color: #3ea520;
+          color: $green;
         }
       }
 
@@ -386,7 +386,7 @@ a {
       font-size: 75px;
       position: absolute;
       right: 18px;
-      color: #e8213d;
+      color: $primary;
     }
 
     .fa-quote-left {
