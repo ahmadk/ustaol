@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {faUtensils} from '@fortawesome/free-solid-svg-icons';
 
 type ingredientItemType = { category: string; title: string; url: string; alt: string }[];
 type ingredientColumnTowItemsType = { category: string; title: string; url: string; alt: string }[];
@@ -116,6 +117,8 @@ export class MealShowComponent implements OnInit {
       '                                           accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n' +
       '                                           takimata sanctus…',
   }];
+
+  faUtensils = faUtensils;
 
   constructor(private formBuilder: FormBuilder) {
   }
