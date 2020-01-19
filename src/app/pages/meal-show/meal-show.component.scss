@@ -30,8 +30,8 @@ h3 {
       right: 7%;
       top: 16px;
       border-radius: 15px;
-      border: solid 1px #e8213d;
-      background-color: #f5f5f9;
+      border: solid 1px $primary;
+      background-color: $background;
       width: 82px;
       height: 30px;
       font-family: Nunito, serif;
@@ -48,6 +48,8 @@ h3 {
 
   .meal-content {
     .meal-date {
+      margin-bottom: 24px;
+
       i {
         font-size: 15px;
         line-height: 1.67;
@@ -127,8 +129,9 @@ h3 {
       a {
         width: 185px;
         height: 50px;
-        padding: 10px;
         margin-top: 55px;
+        align-items: center;
+        display: grid
       }
     }
   }
@@ -185,7 +188,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 0;
+    border-radius: 0 4px 4px 0 !important;
   }
 
   .selected {
@@ -193,7 +196,7 @@ h3 {
     height: 50px;
     background-color: $primary !important;
     border-radius: 4px !important;
-    color: white !important;
+    color: #ffffff !important;
     margin-top: -3px;
     padding: 12px;
   }
@@ -227,10 +230,12 @@ h3 {
 
   .what-you-need {
     border-left: solid 1px $text-light;
-    height: 83%;
+    height: 88%;
   }
 
   .what-you-use {
+    margin-top: 66px;
+
     h1 {
       font-family: SurveyorText, serif;
       font-size: 25px;
@@ -252,7 +257,7 @@ h3 {
       line-height: 1.67;
       letter-spacing: normal;
       text-align: left;
-      color: #3ea520;
+      color: $green;
     }
   }
 }
@@ -296,6 +301,7 @@ h3 {
     text-align: left;
     color: $text;
     display: inline-block;
+    margin-bottom: 15px;
   }
 
   .paragraph-of-step {
@@ -304,6 +310,12 @@ h3 {
     line-height: 1.67;
     text-align: left;
     color: $text;
+  }
+
+  .line-of-step {
+    margin-bottom: 15px;
+    border-bottom: 1px solid $text-light;
+    display: block;
   }
 }
 
