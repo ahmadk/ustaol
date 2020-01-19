@@ -50,7 +50,7 @@ h3 {
     .meal-date {
       margin-bottom: 24px;
 
-      i {
+      fa-icon {
         font-size: 15px;
         line-height: 1.67;
         text-align: left;
@@ -249,7 +249,7 @@ h3 {
 
     }
 
-    i {
+    fa-icon {
       font-size: 18px;
       font-weight: normal;
       font-stretch: normal;
@@ -257,7 +257,7 @@ h3 {
       line-height: 1.67;
       letter-spacing: normal;
       text-align: left;
-      color: $green;
+      color: $green !important;
     }
   }
 }

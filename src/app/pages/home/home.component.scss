@@ -88,7 +88,7 @@ a {
   }
 }
 
-.play-btn i {
+.play-btn fa-icon {
   color: #ffffff;
   font-size: 20px;
   margin-left: 8px;
@@ -215,13 +215,13 @@ a {
         height: unset;
         margin-top: 29px;
 
-        i {
+        fa-icon {
           font-size: 18px;
           font-weight: normal;
           line-height: 1.67;
           letter-spacing: normal;
           text-align: left;
-          color: $green;
+          color: $green !important;
         }
       }
 
@@ -382,14 +382,14 @@ a {
     margin-left: 30px;
     margin-bottom: 50px;
 
-    .fa-quote-right {
+    .quote-right {
       font-size: 75px;
       position: absolute;
       right: 18px;
       color: $primary;
     }
 
-    .fa-quote-left {
+    .quote-left {
       font-size: 75px;
       position: absolute;
       top: -35px;

@@ -1,6 +1,7 @@
 import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
 import { CarouselComponent, SlidesOutputData } from 'ngx-owl-carousel-o';
+import { faCheck, faQuoteLeft, faQuoteRight, faPlay, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 type MealsPreviewType = { subtitle: string; title: string; url: string }[];
 type discountItemsTypes = { title: string; }[];
@@ -86,7 +87,12 @@ export class HomeComponent implements OnInit {
     url: '../../assets/images/company-logo-6.png',
     alt: 'logo',
   }];
-
+  faChecks = faCheck;
+  faQuoteLeft = faQuoteLeft;
+  faQuoteRight = faQuoteRight;
+  faPlay = faPlay;
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -94,7 +100,7 @@ export class HomeComponent implements OnInit {
     pullDrag: false,
     dots: true,
     navSpeed: 700,
-    navText: ['<i class=\'fa fa-chevron-left\'></i>', '<i class=\'fa fa-chevron-right\'></i>'],
+    navText: ['<fa-icon [icon]="faChevronLeft"></fa-icon>', '<fa-icon [icon]="faChevronRight"></fa-icon>'],
     responsive: {
       0: {
         items: 1,

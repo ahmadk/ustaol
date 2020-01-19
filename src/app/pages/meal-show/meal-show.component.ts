@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
-import {faUtensils} from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { faCarrot, faCheck, faUtensils, faClock } from '@fortawesome/free-solid-svg-icons';
 
 type ingredientItemType = { category: string; title: string; url: string; alt: string }[];
 type ingredientColumnTowItemsType = { category: string; title: string; url: string; alt: string }[];
@@ -119,6 +119,9 @@ export class MealShowComponent implements OnInit {
   }];
 
   faUtensils = faUtensils;
+  faCarrots = faCarrot;
+  faChecks = faCheck;
+  faClock = faClock;
 
   constructor(private formBuilder: FormBuilder) {
   }
