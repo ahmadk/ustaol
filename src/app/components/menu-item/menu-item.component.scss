@@ -1,9 +1,13 @@
 @import "../../../styles.scss";
 
-.menu-item-container{
-  height:350px;
+.menu-item-container {
+  height: 350px;
   position: relative;
   width: 370px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .slider-item-image {
@@ -44,7 +48,7 @@
   }
 }
 
-.meal-title{
+.meal-title {
   font-family: SurveyorText, serif;
   font-size: 25px;
   font-weight: bold;
@@ -53,31 +57,31 @@
   color: $primary;
 }
 
-.meal-desc{
+.meal-desc {
   font-family: Nunito;
   font-size: 15px;
   line-height: 1.67;
   color: $text-light;
 }
 
-.desc-container{
+.desc-container {
   margin-left: 20px;
 }
 
-.time{
+.time {
   font-family: Nunito;
   font-size: 15px;
   line-height: 1.67;
   color: $text;
 }
 
-.fa-clock-o{
+.fa-clock-o {
   font-size: 15px;
   line-height: 1.67;
   color: $text-light;
 }
 
-.title-and-desc{
+.title-and-desc {
   height: 90px;
 }
 

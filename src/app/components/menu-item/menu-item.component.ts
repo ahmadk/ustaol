@@ -10,6 +10,7 @@ export class MenuItemComponent implements OnInit {
   @Input() image;
   @Input() title;
   @Input() description;
+  @Input() url;
   @Input() time;
 
   constructor() {

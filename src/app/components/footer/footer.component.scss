@@ -11,6 +11,11 @@
   .social-media {
     p {
       margin-top: 20px;
+      font-size: 13px;
+      font-family: Nunito, serif;
+      line-height: 1.54;
+      text-align: left;
+      color: $text;
     }
 
     .social-media-icons {
@@ -54,7 +59,6 @@
   }
 
   .contact-link {
-    padding-left: 8%;
 
     h3 {
       font-family: SurveyorText, serif;
@@ -93,10 +97,24 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .social-media-icons {
+      a {
+        margin-right: 30px !important;
+      }
+    }
+    .contact-link {
+      ul {
+        li {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
 }
 
 .footer-bottom {
-  height: 63px;
   background-color: $text;
 
   .designed-by {
