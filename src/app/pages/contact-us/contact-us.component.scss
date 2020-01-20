@@ -34,6 +34,21 @@
         margin-bottom: 20px;
       }
 
+      .info {
+        .phone-number {
+          padding-left: 16px;
+        }
+
+        .available-time {
+          padding-left: 30px;
+        }
+
+        .email {
+          padding-left: 16px;
+          color: $text;
+        }
+      }
+
       ul {
         list-style: none;
         padding: 0;
@@ -45,6 +60,11 @@
           line-height: 1.67;
           text-align: left;
           color: $text;
+          margin-bottom: 15px;
+
+          fa-icon {
+            color: $footer-text;
+          }
         }
       }
     }
@@ -64,7 +84,7 @@
   background-color: $background-dark;
   height: 750px;
 
-  .wael {
+  .form-section {
     margin-top: 70px;
 
     h3 {
@@ -85,6 +105,14 @@
       font-size: 13px;
       line-height: 1.31;
       text-align: left;
+      color: $text;
+    }
+
+    input {
+      color: $text-light;
+    }
+
+    option {
       color: $text;
     }
 

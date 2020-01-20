@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div class="card mb-3" style="max-width: 670px;">
           <div class="row no-gutters">
-            <div class="col-md-8">
+            <div class="col-md-7">
               <div class="card-body">
                 <h3 class="card-title">Hola amigos</h3>
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -30,28 +30,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card-body pl-0">
+            <div class="col-md-5">
+              <div class="card-body">
                 <h3 class="card-title">Contact</h3>
-                <ul>
+                <ul class="info">
                   <li>
-                    <span>1048 Washington Avenue</span>
-                    <span>Brooklyn, NY 11225</span>
+                    <span class="address">1048 Washington Avenue</span>
+                    <span class="address d-block">Brooklyn, NY 11225</span>
                   </li>
                   <li>
                     <fa-icon [icon]="faPhoneAlt"></fa-icon>
-                    + 1 3923 22 44 11
-                    Mon - Fri 9am - 5pm
+                    <span class="phone-number">+ 1 3923 22 44 11</span>
+                    <span class="d-block available-time">Mon - Fri 9am - 5pm</span>
                   </li>
                   <li>
                     <fa-icon [icon]="faPhoneAlt"></fa-icon>
-                    + 1 3923 22 44 11
-                    Mon - Fri 9am - 5pm
+                    <span class="phone-number">+ 1 3923 22 44 11</span>
+                    <span class="d-block available-time">Mon - Fri 9am - 5pm</span>
                   </li>
                   <li>
                     <a href="#">
                       <fa-icon [icon]="faAt"></fa-icon>
-                      hello@example.com
+                      <span class="email">hello@example.com</span>
                     </a>
                   </li>
                 </ul>
@@ -68,23 +68,23 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="wael">
+        <div class="form-section">
           <h3>Drop us a line</h3>
           <div class="col-md-6">
             <form>
               <div class="form-group">
-                <label for="exampleInputName">Full name</label>
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Full name">
+                <label for="input-full-name">Full name</label>
+                <input type="text" class="form-control" id="input-full-name" placeholder="Full name">
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <label for="input-email">Email address</label>
+                <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp"
                        placeholder="Email address">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
+                <label for="select">Subject</label>
+                <select class="form-control" id="select">
+                  <option selected>Suggestion</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
@@ -92,8 +92,9 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="textarea">Message</label>
+                <textarea class="form-control" id="textarea" rows="3"
+                          placeholder="Placeholder"></textarea>
               </div>
               <button type="submit" class="btn btn-primary w-100">Submit</button>
             </form>
