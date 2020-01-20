@@ -95,7 +95,7 @@
       <div class="col-md-12">
         <h3>Taste in pictures</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-        <owl-carousel-o #carouselComponent [options]="customOptions">
+        <owl-carousel-o #carouselComponent [options]="customOptions" #owlCar>
           <ng-template carouselSlide *ngFor="let slide of tastePicturesSlides">
             <div class="slide-image">
               <img src="{{slide.url}}" alt="{{slide.alt}}">
@@ -103,6 +103,16 @@
             <p class="slider-item-title">{{slide.subtitle}}</p>
           </ng-template>
         </owl-carousel-o>
+      </div>
+      <div class="col-md-12">
+        <div class="owl-arrows">
+          <div class="arrow-left" (click)="owlCar.prev()">
+            <img class="img-fluid" src="../../assets/images/left-arrow.png" alt="">
+          </div>
+          <div class="arrow-right" (click)="owlCar.next()">
+            <img class="img-fluid" src="../../assets/images/right-arrow.png" alt="">
+          </div>
+        </div>
       </div>
       <a href="#" class="btn btn-outline-primary see-menu-btn">See the menu</a>
     </div>
@@ -260,8 +270,3 @@
   </div>
 </section>
 <!--end subscribe-->
-
-<app-call-to-action-footer image=""
-                           title=""
-                           description=""
-></app-call-to-action-footer>

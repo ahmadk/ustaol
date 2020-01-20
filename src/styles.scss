@@ -30,33 +30,7 @@
 }
 
 .owl-nav {
-  position: relative !important;
-
-  .owl-prev {
-    position: absolute;
-    left: -60px;
-    bottom: 174px;
-    background-color: unset !important;
-    color: #808495 !important;
-    font-size: 20px;
-
-    i {
-      font-size: 35px;
-    }
-  }
-
-  .owl-next {
-    position: absolute;
-    right: -60px;
-    bottom: 174px;
-    background-color: unset !important;
-    color: #808495 !important;
-    font-size: 34px;
-
-    i {
-      font-size: 35px;
-    }
-  }
+  display: none !important;
 }
 
 .owl-dot {
@@ -70,12 +44,6 @@
     span {
       background-color: #e8213d !important;
     }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .owl-nav {
-    display: none;
   }
 }
 

@@ -569,5 +569,32 @@ a {
   }
 }
 
+.owl-arrows {
+  position: relative !important;
+
+  .arrow-left {
+    position: absolute;
+    left: -60px;
+    bottom: 190px;
+    background-color: unset !important;
+    color: #808495 !important;
+    font-size: 34px;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: -60px;
+    bottom: 190px;
+    background-color: unset !important;
+    color: #808495 !important;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .test-class {
+    display: none;
+  }
+}
 
 

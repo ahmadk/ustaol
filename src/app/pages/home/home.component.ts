@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
     pullDrag: false,
     dots: true,
     navSpeed: 700,
-    navText: ['<fa-icon [icon]="faChevronLeft"></fa-icon>', '<fa-icon [icon]="faChevronRight"></fa-icon>'],
+    navText: ['', ''],
     responsive: {
       0: {
         items: 1,
