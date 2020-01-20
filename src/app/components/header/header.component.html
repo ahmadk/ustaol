@@ -31,7 +31,7 @@
               How it works
             </a>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <button ngbDropdownItem>How it works</button>
+              <button ngbDropdownItem [routerLink]="['/how-it-works']">How it works</button>
               <button ngbDropdownItem>How Subscription works</button>
               <button ngbDropdownItem>Distribution & Delivery</button>
             </div>
@@ -51,7 +51,7 @@
           </div>
         </li>
         <li class="nav-item ml-2">
-          <a class="btn btn-primary getting-started" href="#">Getting started</a>
+          <a class="btn btn-primary getting-started" href="#!" onclick="return false;">Getting started</a>
         </li>
       </ul>
     </div>

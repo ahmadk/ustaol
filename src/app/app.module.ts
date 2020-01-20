@@ -16,6 +16,8 @@ import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MealShowComponent } from './pages/meal-show/meal-show.component';
+import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
+import { HIWCardComponent } from './components/hiw-card/hiw-card.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { MealShowComponent } from './pages/meal-show/meal-show.component';
     MenuItemComponent,
     MenuComponent,
     MealShowComponent,
+    HowItWorksComponent,
+    HIWCardComponent,
   ],
   imports: [
     BrowserModule,
