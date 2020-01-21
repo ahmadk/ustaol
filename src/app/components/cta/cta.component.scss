@@ -1,0 +1,50 @@
+@import "src/variables";
+h3 {
+  font-family: SurveyorText, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+p {
+  height: 70px;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: $text;
+  font-family: Nunito, serif;
+}
+
+.cta {
+  height: 436px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .cheap-intuitive-content {
+    margin-top: 100px;
+    background-color: #ffffff;
+    height: 236px;
+    opacity: 0.9;
+    border-radius: 2px;
+
+    h3 {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    p {
+      height: unset;
+    }
+
+    a {
+      width: 185px;
+      height: 50px;
+      display: block;
+      margin: auto;
+      padding: 13px;
+    }
+  }
+}
