@@ -20,7 +20,7 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: $text;
-  font-family: Nunito;
+  font-family: Nunito, serif;
 }
 
 h2 {
@@ -51,7 +51,6 @@ a {
   margin: 19% auto;
 
   h3 {
-    height: 42px;
     text-align: center;
     font-size: 35px;
   }
@@ -135,9 +134,6 @@ a {
   padding: 13px;
 }
 
-.how-it-works {
-  height: 782px;
-}
 
 .meals-preview {
   display: grid;
@@ -168,10 +164,11 @@ a {
 
 .box {
   height: 806px;
+  padding-top: 200px;
 }
 
 .discount {
-  height: 900px;
+  padding-bottom: 100px;
   background-color: $background;
 }
 
@@ -186,7 +183,6 @@ a {
     position: absolute;
     z-index: 1;
     width: 570px;
-    height: 482px;
     border-radius: 8px;
     background-color: #ffffff;
     margin-top: 229px;
@@ -221,14 +217,14 @@ a {
           line-height: 1.67;
           letter-spacing: normal;
           text-align: left;
-          color: $green !important;
+          color: $check !important;
         }
       }
 
       .discount-button {
         width: 100%;
         height: 40px;
-        margin: 50px auto;
+        margin: 50px auto 14px;
         display: block;
       }
     }
@@ -236,7 +232,6 @@ a {
 }
 
 .taste-in-pictures {
-  height: 803px;
 
   h3 {
     margin-top: 100px;
@@ -339,14 +334,13 @@ a {
 }
 
 .opinions-take-proud-of {
-  height: 1006px;
+  padding-bottom: 108px;
 
   .opinions-take-proud-content {
     margin-top: 100px;
   }
 
   .opinions-take-proud-card-light {
-    height: 270px;
     border-radius: 8px;
     box-shadow: 5px 9px 40px 0 rgba(0, 0, 0, 0.16);
     background-color: #7c8b9b;
@@ -370,12 +364,12 @@ a {
         width: 85px;
         height: 85px;
         border-radius: 15px;
+        position: absolute;
       }
     }
   }
 
   .opinions-take-proud-card-white {
-    height: 270px;
     border-radius: 8px;
     box-shadow: 5px 9px 40px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
@@ -387,12 +381,13 @@ a {
       position: absolute;
       right: 18px;
       color: $primary;
+      bottom: -27%;
     }
 
     .quote-left {
       font-size: 75px;
       position: absolute;
-      top: -35px;
+      top: -19%;
       left: 18px;
       color: $primary;
     }
@@ -409,10 +404,11 @@ a {
       }
 
       img {
-        margin: -20px 7px;
+        margin: -35px 7px;
         width: 85px;
         height: 85px;
         border-radius: 15px;
+        position: absolute;
       }
     }
   }
@@ -511,19 +507,14 @@ a {
       margin-top: 20px;
     }
   }
-  .opinions-take-proud-of {
-    height: 1597px;
-  }
 }
 
 @media screen and (max-width: 425px) {
-  .how-it-works {
-    height: 1292px;
-  }
   .discount-card {
-    width: 90% !important;
+    width: 100% !important;
     height: auto !important;
     margin-top: 100px !important;
+    position: unset !important;
   }
   .subscribe {
     .input-group {
@@ -592,7 +583,7 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .test-class {
+  .owl-arrows {
     display: none;
   }
 }
