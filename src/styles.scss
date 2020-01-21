@@ -47,3 +47,28 @@
   }
 }
 
+.accordion {
+  .card-header {
+    border-radius: 4px !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+    border: solid 0.8px $text-light !important;
+    background-color: #ffffff !important;
+    padding: 2px 0 0 12px !important;
+    margin-bottom: unset !important;
+
+    .container-fluid {
+      text-decoration: none !important;
+    }
+  }
+
+  .card-body {
+    font-family: Nunito, serif;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text;
+  }
+}
+
+

@@ -20,7 +20,8 @@ import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component
 import { HIWCardComponent } from './components/hiw-card/hiw-card.component';
 import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/how-subscription-works.component';
 import { CtaComponent } from './components/cta/cta.component';
-import { FaqComponent } from './pages/faq/faq.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FaqComponent } from './pages/faq/faq.component';
     HIWCardComponent,
     HowSubscriptionWorksComponent,
     CtaComponent,
-    FaqComponent,
+    FaqsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
@@ -54,4 +56,7 @@ import { FaqComponent } from './pages/faq/faq.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+  }
+}

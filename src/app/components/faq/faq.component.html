@@ -1,0 +1,18 @@
+<ngb-accordion [closeOthers]="true" activeIds="static-1">
+  <ngb-panel [disabled]="disabled">
+    <ng-template ngbPanelHeader>
+      <div class="d-flex align-items-center justify-content-between">
+        <button ngbPanelToggle class="btn btn-link container-fluid text-left pl-0">
+          {{title}}
+        </button>
+        <span class="arrows-icon">
+          <fa-icon [icon]="icon"></fa-icon>
+        </span>
+        <p *ngIf="disabled" class="text-muted m-0 small">[I'm&nbsp;disabled]</p>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      {{content}}
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

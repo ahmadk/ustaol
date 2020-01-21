@@ -1,0 +1,38 @@
+@import "src/variables";
+
+h3 {
+  font-family: SurveyorText, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.faq {
+  background-color: $background-dark;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  .faq-card {
+    margin-bottom: 38px !important;
+
+    span {
+      float: right;
+      opacity: 0.1;
+      font-size: 30px;
+      text-align: right;
+      color: $text-light;
+      margin-top: -5px;
+    }
+
+    h3 {
+      font-family: SurveyorText, serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+  }
+}
