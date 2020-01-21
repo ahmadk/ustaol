@@ -6,8 +6,8 @@ import { faCheck, faQuoteLeft, faQuoteRight, faPlay, faChevronLeft, faChevronRig
 type MealsPreviewType = { subtitle: string; title: string; url: string }[];
 type discountItemsTypes = { title: string; }[];
 type slidesStoreTypes = { url: string; subtitle: string; alt: string }[];
-type galleryStandardImage = { url: string; alt: string }[];
-type mediaCompanyLogo = { url: string; alt: string }[];
+type galleryStandardImageTypes = { url: string; alt: string }[];
+type mediaCompanyLogoTypes = { url: string; alt: string }[];
 
 
 @Component({
