@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
     subtitle: 'SICILIAN-STYLE CHICKEN PARM',
     alt: 'slider image',
   }];
-  public galleryStandardImages: galleryStandardImage = [{
+  public galleryStandardImages: galleryStandardImageTypes = [{
     url: '../../assets/images/gallary-2.png',
     alt: 'gallary image',
   }, {
@@ -68,7 +68,7 @@ export class HomeComponent implements OnInit {
     alt: 'gallary image',
   }];
 
-  public mediaCompanyLogos: mediaCompanyLogo = [{
+  public mediaCompanyLogos: mediaCompanyLogoTypes = [{
     url: '../../assets/images/company-logo-1.png',
     alt: 'logo',
   }, {
