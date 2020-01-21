@@ -1,0 +1,117 @@
+@import "src/variables";
+
+h3 {
+  font-family: SurveyorText, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $text;
+  font-family: Nunito, serif;
+}
+
+h4 {
+  font-family: SurveyorText, serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.bg-curve {
+  background-image: url(../../../assets/images/how-subscription-works/wave.svg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 190px;
+}
+
+.how-subscription-works {
+  padding-top: 70px;
+  background-color: $background-dark;
+  padding-bottom: 70px;
+
+  .how-subscription-works-card {
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.16);
+    //border: solid 0.5px $text-light;
+    background-color: $primary;
+
+    h4 {
+      padding-top: 62px;
+    }
+
+    .how-subscription-works-content {
+      background-color: #ffffff;
+      padding-left: 61px;
+      padding-right: 61px;
+      padding-bottom: 38px;
+
+      h6 {
+        font-family: Nunito, serif;
+        font-size: 18px;
+        line-height: 0.72;
+        text-align: left;
+        color: $text;
+      }
+
+      fa-icon {
+        margin-right: 15px;
+        color: $check;
+      }
+
+      p {
+        text-align: left;
+        margin-left: 32px;
+        margin-top: 12px;
+        margin-bottom: 28px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .how-subscription-works-content {
+    padding-left: 41px !important;
+    padding-right: 41px !important;
+
+    h6 {
+      font-size: 17px !important;
+    }
+
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-margin {
+    margin-top: 33px;
+  }
+  .how-subscription-works-content {
+    padding-left: 31px !important;
+    padding-right: 31px !important;
+
+    h6 {
+      font-size: 17px !important;
+      line-height: 1 !important;
+    }
+
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
+

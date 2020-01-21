@@ -5,6 +5,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { MealShowComponent } from './pages/meal-show/meal-show.component';
 import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
+import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/how-subscription-works.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 const routes: Routes = [
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'meal-show', component: MealShowComponent},
   {path: 'how-it-works', component: HowItWorksComponent},
+  {path: 'how-subscription-works', component: HowSubscriptionWorksComponent},
+  {path: 'faq', component: FaqComponent},
 
 ];
 

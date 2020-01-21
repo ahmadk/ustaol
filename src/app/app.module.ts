@@ -18,6 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MealShowComponent } from './pages/meal-show/meal-show.component';
 import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
 import { HIWCardComponent } from './components/hiw-card/hiw-card.component';
+import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/how-subscription-works.component';
+import { CtaComponent } from './components/cta/cta.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { HIWCardComponent } from './components/hiw-card/hiw-card.component';
     MealShowComponent,
     HowItWorksComponent,
     HIWCardComponent,
+    HowSubscriptionWorksComponent,
+    CtaComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
