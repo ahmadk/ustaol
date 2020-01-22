@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {Component, Input, OnInit} from '@angular/core';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-faq',
@@ -10,9 +10,16 @@ export class FaqComponent implements OnInit {
   @Input() title;
   @Input() icon;
   @Input() content;
+  // @Output() toggle: EventEmitter<null> = new EventEmitter();
+  @Input() isExpanded = false;
+
   faArrowRight = faArrowRight;
 
   constructor() {
+  }
+
+  toggleState(panelId) {
+    // return !this.isExpanded;
   }
 
   ngOnInit() {
