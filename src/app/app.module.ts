@@ -22,6 +22,7 @@ import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/ho
 import { CtaComponent } from './components/cta/cta.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FaqComponent } from './components/faq/faq.component';
     HowSubscriptionWorksComponent,
     CtaComponent,
     FaqsComponent,
-    FaqComponent
+    FaqComponent,
+    DistributionDeliveryComponent
   ],
   imports: [
     BrowserModule,

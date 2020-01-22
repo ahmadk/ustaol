@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="wave" width="470" height="100" viewBox="0 0 470 100">
+    <defs>
+        <style>
+            .cls-1{clip-path:url(#clip-path)}.cls-2,.cls-4{fill:#fff}.cls-2,.cls-3{opacity:.4}.cls-3{fill:rgba(255,255,255,0)}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_814" d="M0 0h470v100H0z" data-name="Rectangle 814"/>
+        </clipPath>
+    </defs>
+    <g id="Group_151" class="cls-1" data-name="Group 151">
+        <path id="Path_427" d="M10.9 63.9s67.21-34.5 137.083-14.2c121.1 35.1 177.5-2 229.673-4.7 76.3-4 109.667 16.2 109.667 16.2v54.4H10.9z" class="cls-2" data-name="Path 427" transform="translate(6.177)"/>
+    </g>
+    <g id="Group_152" class="cls-1" data-name="Group 152">
+        <path id="Path_428" d="M-55.7 64.6S11.51 30.1 81.383 50.4c121.1 35.1 177.5-2 229.673-4.7 76.3-4.1 109.51 16.2 109.51 16.2v54.4H-55.7z" class="cls-2" data-name="Path 428" transform="translate(-31.563)"/>
+    </g>
+    <g id="Group_153" class="cls-1" data-name="Group 153">
+        <path id="Path_429" d="M23.967 118.3s75.67-68.9 170.923-68.9c103.243 0 153.533 67.9 153.533 67.9v3.7H22.4z" class="cls-3" data-name="Path 429" transform="translate(12.693)"/>
+    </g>
+    <g id="Group_154" class="cls-1" data-name="Group 154">
+        <path id="Path_430" d="M-54.7 83s87.733-45.7 188.47-27.8c128.153 22.7 174.53 6.2 229.673-4.7 83.19-16.4 162.933 36.9 162.933 36.9l2.037 36.7-582.8-3z" class="cls-4" data-name="Path 430" transform="translate(-30.997)"/>
+    </g>
+</svg>

@@ -1,0 +1,123 @@
+@import "src/variables";
+
+.distribution-and-delivery {
+  background-color: $background-dark;
+
+
+  h3 {
+    font-family: SurveyorText, serif;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-top: 70px;
+  }
+
+  .steps {
+    margin-top: 100px;
+
+    .steps-line-div {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+
+      span {
+        margin: 0 auto;
+        color: $footer-text;
+        font-family: Nunito, serif;
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .steps-active-number {
+        font-size: 25px;
+        color: #ffffff !important;
+        width: 60px;
+        height: 60px;
+        border: solid 1px $primary;
+        border-radius: 100%;
+        background-color: $primary;
+        padding: 13px 22px;
+      }
+
+      .steps-number {
+        font-size: 25px;
+        color: $primary;
+        width: 60px;
+        height: 60px;
+        border: solid 1px $primary;
+        border-radius: 100%;
+        padding: 13px 22px;
+      }
+    }
+  }
+
+  .steps-images {
+    position: relative;
+
+    .img-distrbution {
+      border-radius: 0 0 8px 8px;
+    }
+
+    .steps-svg {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+
+  .steps-content {
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    border-radius: 0 0 8px 8px;
+
+    h4 {
+      font-family: SurveyorText, serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: start;
+      color: $primary;
+      margin-bottom: 42px;
+      margin-left: 55px;
+    }
+
+    p {
+      display: inline-block;
+      padding-left: 15px;
+    }
+
+    fa-icon {
+      padding-left: 21px;
+      color: $check;
+    }
+  }
+
+  .steps-card {
+    padding-bottom: 35%;
+  }
+
+  .steps-left-section {
+    .steps-left-card {
+      padding-top: 64%;
+    }
+  }
+
+  .line-bg {
+    width: 10px;
+    background-image: linear-gradient(to bottom, $background-dark, #e8203d);
+  }
+
+  .view-all-faqs-btn {
+    width: 185px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 70px;
+    padding: 12px;
+  }
+}

@@ -7,6 +7,7 @@ import { MealShowComponent } from './pages/meal-show/meal-show.component';
 import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
 import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/how-subscription-works.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
+import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'how-it-works', component: HowItWorksComponent},
   {path: 'how-subscription-works', component: HowSubscriptionWorksComponent},
   {path: 'faqs', component: FaqsComponent},
+  {path: 'distribution-delivery', component: DistributionDeliveryComponent},
 
 ];
 
