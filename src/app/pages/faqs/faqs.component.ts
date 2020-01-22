@@ -3,7 +3,7 @@ import { faArrowRight, faMoneyCheckAlt, faAddressCard, faTruck, faUnlock } from 
 
 
 @Component({
-  selector: 'app-faq',
+  selector: 'app-faqs',
   templateUrl: './faqs.component.html',
   styleUrls: ['./faqs.component.scss']
 })
