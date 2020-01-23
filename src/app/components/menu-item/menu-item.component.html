@@ -9,7 +9,15 @@
         <p class="mt-0 meal-desc">{{description}}</p>
       </a>
     </div>
-    <p class="fa fa-clock-o d-inline"></p>
-    <p class="time d-inline">{{time}}</p>
+    <div class="details">
+      <div class="float-left">
+        <img src="../../assets/icons/chicken-gray.svg" width="22">
+        <span class="single-detail-text">Chicken</span>
+      </div>
+      <div class="float-right">
+        <fa-icon [icon]="faClock"></fa-icon>
+        <span class="single-detail-text">{{time}}</span>
+      </div>
+    </div>
   </div>
 </div>
