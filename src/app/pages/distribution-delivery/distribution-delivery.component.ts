@@ -41,7 +41,8 @@ export class DistributionDeliveryComponent implements OnInit {
       document.getElementById('steps-number-4').classList.add('steps-active-number');
     } else {
       (document.getElementById('steps-line-3').classList.remove('line-bg'),
-        document.getElementById('steps-number-3').classList.remove('steps-active-number'));
+        document.getElementById('steps-number-3').classList.remove('steps-active-number'),
+        document.getElementById('steps-number-4').classList.remove('steps-active-number'));
     }
   }
 }

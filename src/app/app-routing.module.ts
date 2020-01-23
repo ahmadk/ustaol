@@ -8,6 +8,7 @@ import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component
 import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/how-subscription-works.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
+import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'how-subscription-works', component: HowSubscriptionWorksComponent},
   {path: 'faqs', component: FaqsComponent},
   {path: 'distribution-delivery', component: DistributionDeliveryComponent},
+  {path: 'edit-profile', component: EditProfileComponent},
 
 ];
 
