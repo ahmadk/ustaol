@@ -240,7 +240,7 @@ a {
 
 .slide-image {
 
-  &:before {
+  /*&:before {
     content: "";
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -253,9 +253,9 @@ a {
     border-radius: 8px;
     top: 0;
     box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
-  }
+  }*/
 
-  &:after {
+  /*&:after {
     content: "";
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -267,7 +267,7 @@ a {
     z-index: -1;
     border-radius: 8px;
     top: 18px;
-  }
+  }*/
 }
 
 .slider-item-title {
