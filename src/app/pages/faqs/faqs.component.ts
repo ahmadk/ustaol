@@ -9,7 +9,6 @@ import { faArrowRight, faMoneyCheckAlt, faAddressCard, faTruck, faUnlock } from 
 })
 export class FaqsComponent implements OnInit {
   disabled = false;
-  faArrowRight = faArrowRight;
   faMoneyCheckAlt = faMoneyCheckAlt;
   faAddressCard = faAddressCard;
   faTruck = faTruck;

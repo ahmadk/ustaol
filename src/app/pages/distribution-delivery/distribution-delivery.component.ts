@@ -8,7 +8,6 @@ import { faCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class DistributionDeliveryComponent implements OnInit {
   faChecks = faCheck;
-  faArrowDown = faArrowDown;
 
   constructor() {
   }
