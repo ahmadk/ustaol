@@ -29,7 +29,6 @@
         </div>
       </div>
       <div class="col-md-6 meal-image">
-        <a class="btn btn-outline-primary" href="#!">Chicken</a>
         <img class="img-fluid" src="../../../assets/images/meal-show.png" alt="">
       </div>
     </div>
@@ -127,7 +126,9 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="instructions-title">Instructions</h2>
-        <p class="instructions-subtitle">step-by-step</p>
+        <p class="instructions-subtitle">
+          Service instructions for 2 people are set in black (service instructions for 3 people are in red).
+        </p>
         <div class="row">
           <div class="col-md-6 mt-4" *ngFor="let instruction of instructions">
             <img class="img-fluid" src="{{instruction.url}}" alt="{{instruction.alt}}">
@@ -135,7 +136,7 @@
               <span class="number-of-step">{{instruction.number}}</span>
               <h3 class="title-of-step">{{instruction.title}}</h3>
               <span class="line-of-step"></span>
-              <p class="paragraph-of-step">{{instruction.paragraph}}</p>
+              <p class="paragraph-of-step" [innerHTML]="instruction.paragraph"></p>
             </div>
           </div>
         </div>

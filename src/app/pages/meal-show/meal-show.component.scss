@@ -24,27 +24,6 @@ h3 {
   margin-top: 70px;
   margin-bottom: 100px;
 
-  .meal-image {
-    a {
-      position: absolute;
-      right: 7%;
-      top: 16px;
-      border-radius: 15px;
-      border: solid 1px $primary;
-      background-color: $background;
-      width: 82px;
-      height: 30px;
-      font-family: Nunito, serif;
-      font-size: 13px;
-      line-height: 1.31;
-      letter-spacing: normal;
-      color: $primary;
-
-      &:active {
-        color: $primary;
-      }
-    }
-  }
 
   .meal-content {
     .meal-date {
