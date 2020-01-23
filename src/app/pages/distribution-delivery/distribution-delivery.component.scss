@@ -41,9 +41,11 @@
         border-radius: 100%;
         background-color: $primary;
         padding: 13px 22px;
+        transition: all 0.5s ease-in-out;
       }
 
       .steps-number {
+        transition: all 0.5s ease-in-out;
         font-size: 25px;
         color: $primary;
         width: 60px;
@@ -110,6 +112,7 @@
 
   .line-bg {
     width: 10px;
+    transition: all 0.5s ease-in-out;
     background-image: linear-gradient(to bottom, $background-dark, #e8203d);
   }
 
