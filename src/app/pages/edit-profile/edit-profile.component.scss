@@ -1,0 +1,232 @@
+@import "src/variables";
+
+p {
+  font-family: Nunito, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  color: #ffffff;
+}
+
+.title {
+  font-family: SurveyorText, serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  color: $text;
+}
+
+.paragraph-text {
+  color: $text;
+}
+
+label {
+  font-family: Nunito, serif;
+  font-size: 13px;
+  line-height: 1.31;
+  text-align: left;
+  color: $text;
+}
+
+input {
+  font-family: Nunito, serif;
+  font-size: 13px;
+  line-height: 1;
+  text-align: left;
+  color: $text-light;
+
+}
+
+button {
+  width: 170px;
+  height: 40px;
+}
+
+.edit-profile-header {
+  background-color: $primary;
+
+  .header-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+
+    .check-avatar-icon {
+      width: 32px;
+      height: 32px;
+      border: solid 2px #ffffff;
+      background-color: $check;
+      border-radius: 100%;
+      padding: 2px 3px 3px 7px;
+      position: absolute;
+      top: 64%;
+      right: 0;
+
+      fa-icon {
+        font-size: 14px;
+        line-height: 1.43;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .profile-name {
+    margin-top: 54px;
+
+    h6 {
+      font-family: SurveyorText, serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+}
+
+.edit-profile-body {
+  background-color: $background-dark;
+
+  .edit-profile-menu {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 50px;
+  }
+
+  .edit-profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    padding-right: 10px;
+  }
+
+  .edit-image {
+    margin-top: 55px;
+    padding-left: 0;
+
+    .upload-image {
+      margin-right: 30px;
+      width: 207px;
+      height: 40px;
+      border-radius: 4px;
+      border: solid 1px $primary;
+      background-color: #ffffff;
+      font-family: Nunito, serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.33;
+      text-align: center;
+      color: $primary;
+    }
+
+    .delete-image {
+      font-family: Nunito, serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.33;
+      text-align: center;
+      color: $primary;
+    }
+  }
+
+  .edit-form {
+    margin-top: 30px;
+
+  }
+
+  .cards {
+    .card {
+      p {
+        padding-top: 41px;
+        padding-left: 20px;
+      }
+
+      fa-icon {
+        text-align: end;
+        font-size: 25px;
+        line-height: 1.2;
+        color: $primary;
+        padding: 0 10px 8px 0;
+      }
+
+      span {
+        text-align: end;
+        padding: 0 10px 8px 0;
+        font-family: Nunito, serif;
+        font-size: 13px;
+        line-height: 1.85;
+        color: $text-light;
+      }
+    }
+  }
+
+  .card-info {
+    .rectangle {
+      width: 44px;
+      height: 41px;
+      background-color: #fda859;
+      margin-top: 40px;
+    }
+
+    .card-number {
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: left;
+        margin-top: 28px;
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: block;
+        font-family: Nunito, serif;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: 1.5px;
+        text-align: end;
+        color: #ffffff;
+        margin-right: 87px;
+      }
+    }
+
+    .card-icon {
+      margin-bottom: 15px;
+
+      fa-icon {
+        font-size: 50px;
+        line-height: 1.2;
+        color: #ffffff;
+        float: right;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.38;
+        letter-spacing: 1.6px;
+        display: inline-block;
+        text-align: left;
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .address-form {
+    textarea {
+      height: 119px;
+    }
+  }
+}
+
+
+
+

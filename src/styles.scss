@@ -71,4 +71,33 @@
   }
 }
 
+.edit-profile-menu {
+  .tab-content {
+    margin-left: 31px;
+  }
+
+  .nav-pills {
+    margin-bottom: 200px;
+    border-radius: 8px;
+    background-image: linear-gradient(147deg, #d11d35, $primary);
+
+    .nav-item {
+      margin-top: 25px;
+
+      a {
+        font-family: Nunito, serif;
+        font-size: 18px;
+        text-align: left;
+        color: #ffffff;
+        line-height: 1.67;
+        padding-left: 40px;
+      }
+    }
+
+    .nav-item:last-child {
+      margin-bottom: 25px;
+    }
+  }
+}
+
 

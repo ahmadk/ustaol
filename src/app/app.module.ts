@@ -23,6 +23,7 @@ import { CtaComponent } from './components/cta/cta.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
+import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { DistributionDeliveryComponent } from './pages/distribution-delivery/dis
     CtaComponent,
     FaqsComponent,
     FaqComponent,
-    DistributionDeliveryComponent
+    DistributionDeliveryComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,
