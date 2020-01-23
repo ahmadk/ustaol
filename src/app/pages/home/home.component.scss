@@ -239,6 +239,11 @@ a {
 }
 
 .slide-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 264px;
+  width: 100%;
+
 
   /*&:before {
     content: "";

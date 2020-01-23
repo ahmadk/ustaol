@@ -97,9 +97,8 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
         <owl-carousel-o #carouselComponent [options]="customOptions" #owlCar>
           <ng-template carouselSlide *ngFor="let slide of tastePicturesSlides">
-            <div class="slide-image">
-              <img src="{{slide.url}}" alt="{{slide.alt}}">
-            </div>
+            <div class="slide-image" [ngStyle]="{ 'background-image': 'url(\' ' + slide.url + '\')' }">
+              <!--<img src="{{slide.url}}" alt="{{slide.alt}}">--></div>
             <p class="slider-item-title">{{slide.subtitle}}</p>
           </ng-template>
         </owl-carousel-o>
