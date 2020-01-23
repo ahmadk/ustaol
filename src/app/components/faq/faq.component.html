@@ -1,13 +1,13 @@
-<ngb-accordion [closeOthers]="true" [activeIds]="isExpanded?'static-1':'false'">
+<ngb-accordion [closeOthers]="true" [activeIds]="isExpanded?'static-1':'false'" (click)="isExpanded = !isExpanded">
   <ngb-panel id="static-1">
     <ng-template ngbPanelHeader let-opened="false">
       <div class="d-flex align-items-center justify-content-between">
         <button ngbPanelToggle class="btn btn-link container-fluid text-left pl-0">
           {{title}}
-        </button>
-        <span class="arrows-icon">
-          <fa-icon [icon]="icon"></fa-icon>
+          <span class="arrows-icon float-right">
+          <fa-icon [icon]="isExpanded?faArrowDown:faArrowRight"></fa-icon>
         </span>
+        </button>
       </div>
     </ng-template>
     <ng-template ngbPanelContent>

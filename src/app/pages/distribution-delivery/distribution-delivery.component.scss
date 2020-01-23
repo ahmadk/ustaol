@@ -41,9 +41,11 @@
         border-radius: 100%;
         background-color: $primary;
         padding: 13px 22px;
+        transition: all 0.5s ease-in-out;
       }
 
       .steps-number {
+        transition: all 0.5s ease-in-out;
         font-size: 25px;
         color: $primary;
         width: 60px;
@@ -87,7 +89,7 @@
       margin-left: 55px;
     }
 
-    p {
+    .item-text {
       display: inline-block;
       padding-left: 15px;
     }
@@ -110,6 +112,7 @@
 
   .line-bg {
     width: 10px;
+    transition: all 0.5s ease-in-out;
     background-image: linear-gradient(to bottom, $background-dark, #e8203d);
   }
 
@@ -120,4 +123,9 @@
     margin: 0 auto 70px;
     padding: 12px;
   }
+}
+
+.only-text {
+  padding-left: 30px;
+  padding-right: 30px;
 }

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { faCarrot, faCheck, faUtensils, faClock } from '@fortawesome/free-solid-svg-icons';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
+import {faClock} from '@fortawesome/free-regular-svg-icons';
+import {faCheck} from '@fortawesome/free-solid-svg-icons';
 
 type ingredientItemType = { category: string; title: string; url: string; alt: string }[];
 type ingredientColumnTowItemsType = { category: string; title: string; url: string; alt: string }[];
@@ -70,7 +71,7 @@ export class MealShowComponent implements OnInit {
     alt: '',
     number: '1',
     title: 'Prepare & roast the potatoes:',
-    paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\n' +
+    paragraph: 'Lorem ipsum dolor sit amet, <span class="text-primary">consetetur sadipscing elitr,</span> sed diam nonumy\n' +
       '                                           eirmod tempor invidunt ut\n' +
       '                                           labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et\n' +
       '                                           accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n' +
@@ -81,7 +82,7 @@ export class MealShowComponent implements OnInit {
     alt: '',
     number: '2',
     title: 'Prepare the remaining ingredients:',
-    paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\n' +
+    paragraph: 'Lorem ipsum dolor sit amet, <span class="text-primary">consetetur sadipscing elitr,</span> sed diam nonumy\n' +
       '                                           eirmod tempor invidunt ut\n' +
       '                                           labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et\n' +
       '                                           accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n' +
@@ -104,7 +105,7 @@ export class MealShowComponent implements OnInit {
     paragraph: '1 UnitLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\n' +
       '                                           eirmod tempor invidunt ut\n' +
       '                                           labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et\n' +
-      '                                           accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea\n' +
+      '                                           accusam et <span class="text-primary">justo duo.</span> Stet clita kasd gubergren, no sea\n' +
       '                                           takimata sanctus…',
   }, {
     url: '../../../assets/images/instructions/instructions-5.png',
@@ -118,8 +119,6 @@ export class MealShowComponent implements OnInit {
       '                                           takimata sanctus…',
   }];
 
-  faUtensils = faUtensils;
-  faCarrots = faCarrot;
   faChecks = faCheck;
   faClock = faClock;
 

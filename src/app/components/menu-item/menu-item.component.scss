@@ -68,17 +68,21 @@
   margin-left: 20px;
 }
 
-.time {
-  font-family: Nunito;
-  font-size: 15px;
-  line-height: 1.67;
-  color: $text;
-}
+.details {
+  .single-detail-text {
+    display: inline;
+    font-family: Nunito;
+    font-size: 15px;
+    line-height: 1.67;
+    color: $text;
+    margin-left: 10px;
+  }
 
-.fa-clock-o {
-  font-size: 15px;
-  line-height: 1.67;
-  color: $text-light;
+  fa-icon {
+    font-size: 15px;
+    line-height: 1.67;
+    color: $text-light;
+  }
 }
 
 .title-and-desc {

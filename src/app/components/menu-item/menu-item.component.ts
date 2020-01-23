@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
+import {faClock} from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-menu-item',
@@ -12,6 +13,7 @@ export class MenuItemComponent implements OnInit {
   @Input() description;
   @Input() url;
   @Input() time;
+  faClock = faClock;
 
   constructor() {
   }

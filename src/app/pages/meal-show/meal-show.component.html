@@ -5,7 +5,7 @@
         <div class="meal-content">
           <div class="meal-date">
             <fa-icon [icon]="faClock"></fa-icon>
-            <span class="time  ml-2">30 min</span>
+            <span class="time ml-2">30 min</span>
           </div>
           <div class="meal-header">
             <h2>Classic Macaroni and Tomatoes</h2>
@@ -13,10 +13,12 @@
           </div>
           <div class="meal-body">
             <div class="servings">
-              <fa-icon class="text-primary" [icon]="faUtensils"></fa-icon>
-              <span>2 Servings</span>
-              <span class="border-style"></span>
-              <fa-icon class="text-primary ml-3" [icon]="faCarrots"></fa-icon>
+              <!--You may use one of these icons, carrot.svg, meat.svg or chicken.svg-->
+              <!--              <img src="../../assets/icons/carrot.svg" alt="chicken icon" width="32px">-->
+              <!--              <img src="../../assets/icons/meat.svg" alt="chicken icon" width="32px">-->
+              <img src="../../assets/icons/chicken.svg" alt="chicken icon" width="32px">
+              <span>Chicken</span>
+              <img src="../../assets/icons/calories.svg" alt="K Calories icon" width="32px">
               <span>680 Cals/serving</span>
             </div>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
@@ -27,7 +29,6 @@
         </div>
       </div>
       <div class="col-md-6 meal-image">
-        <a class="btn btn-outline-primary" href="#!">Chicken</a>
         <img class="img-fluid" src="../../../assets/images/meal-show.png" alt="">
       </div>
     </div>
@@ -125,7 +126,9 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="instructions-title">Instructions</h2>
-        <p class="instructions-subtitle">step-by-step</p>
+        <p class="instructions-subtitle">
+          Service instructions for 2 people are set in black (service instructions for 3 people are in red).
+        </p>
         <div class="row">
           <div class="col-md-6 mt-4" *ngFor="let instruction of instructions">
             <img class="img-fluid" src="{{instruction.url}}" alt="{{instruction.alt}}">
@@ -133,7 +136,7 @@
               <span class="number-of-step">{{instruction.number}}</span>
               <h3 class="title-of-step">{{instruction.title}}</h3>
               <span class="line-of-step"></span>
-              <p class="paragraph-of-step">{{instruction.paragraph}}</p>
+              <p class="paragraph-of-step" [innerHTML]="instruction.paragraph"></p>
             </div>
           </div>
         </div>

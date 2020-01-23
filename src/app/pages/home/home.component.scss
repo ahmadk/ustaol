@@ -49,6 +49,10 @@ a {
 
 .hero-content {
   margin: 19% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   h3 {
     text-align: center;
@@ -57,7 +61,7 @@ a {
 }
 
 .video-thumbnail {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -101,10 +105,10 @@ a {
     box-shadow: 0 0 0 0 rgb(232, 33, 61);
   }
   40% {
-    box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+    box-shadow: 0 0 0 30px rgba(255, 193, 7, 0);
   }
   80% {
-    box-shadow: 0 0 0 50px rgba(255, 193, 7, 0);
+    box-shadow: 0 0 0 30px rgba(255, 193, 7, 0);
   }
   100% {
     box-shadow: 0 0 0 rgba(255, 193, 7, 0);
@@ -126,14 +130,8 @@ a {
 }
 
 .choose-meals {
-  width: 250px;
-  height: 50px;
-  border-radius: 4px;
-  margin: auto;
-  display: block;
-  padding: 13px;
+  margin-top: 40px;
 }
-
 
 .meals-preview {
   display: grid;
@@ -154,12 +152,7 @@ a {
 }
 
 .how-it-works-btn {
-  width: 185px;
-  height: 40px;
-  border-radius: 4px;
-  margin: 20px auto;
-  display: block;
-  padding: 8px;
+
 }
 
 .box {
@@ -222,10 +215,9 @@ a {
       }
 
       .discount-button {
-        width: 100%;
-        height: 40px;
-        margin: 50px auto 14px;
-        display: block;
+        margin-top: 30px;
+        padding: 20px 40px;
+        box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
       }
     }
   }
@@ -239,6 +231,7 @@ a {
 }
 
 .slide-image {
+  //box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
   background-size: cover;
   background-repeat: no-repeat;
   height: 264px;
@@ -282,9 +275,9 @@ a {
 
 .see-menu-btn {
   width: 185px;
-  height: 40px;
   display: block;
   margin: 50px auto;
+  padding: 13px 40px !important
 }
 
 .gallery {
