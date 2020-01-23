@@ -89,7 +89,7 @@
       margin-left: 55px;
     }
 
-    p {
+    .item-text {
       display: inline-block;
       padding-left: 15px;
     }
@@ -123,4 +123,9 @@
     margin: 0 auto 70px;
     padding: 12px;
   }
+}
+
+.only-text {
+  padding-left: 30px;
+  padding-right: 30px;
 }
