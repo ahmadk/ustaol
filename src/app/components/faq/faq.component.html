@@ -1,6 +1,6 @@
-<ngb-accordion [closeOthers]="true" activeIds="static-1">
-  <ngb-panel id="static-1" title="Simple">
-    <ng-template ngbPanelHeader>
+<ngb-accordion [closeOthers]="true" [activeIds]="isExpanded?'static-1':'false'">
+  <ngb-panel id="static-1">
+    <ng-template ngbPanelHeader let-opened="false">
       <div class="d-flex align-items-center justify-content-between">
         <button ngbPanelToggle class="btn btn-link container-fluid text-left pl-0">
           {{title}}
