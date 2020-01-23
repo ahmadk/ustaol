@@ -118,8 +118,6 @@ export class MealShowComponent implements OnInit {
       '                                           takimata sanctus…',
   }];
 
-  faUtensils = faUtensils;
-  faCarrots = faCarrot;
   faChecks = faCheck;
   faClock = faClock;
 
