@@ -1,6 +1,90 @@
 @import "src/variables";
 
-.bg{
+.bg {
   background-color: $background-dark !important;
+  padding-top: 60px;
 }
 
+h3 {
+  font-family: SurveyorText, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.text-green {
+  color: $check;
+}
+
+.left-side {
+  border-radius: 5px;
+
+  .left-side-header {
+    display: flex;
+    justify-content: left;
+  }
+
+  .left-side-body {
+    margin-top: 30px;
+  }
+}
+
+.left-side-first-section {
+  .photo {
+    border-radius: 11px;
+  }
+
+  .path {
+    right: -1px;
+  }
+
+  .right-side-header {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+.path {
+  height: 100%;
+}
+
+.parent {
+  background: white;
+  margin-bottom: 40px;
+  border-radius: 11px;
+}
+
+.ellipse {
+  width: 30px;
+  height: 30px;
+  background-color: $primary;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.number {
+  font-family: Nunito, serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.title {
+  font-family: SurveyorText, serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
+  color: $primary;
+  margin-top: 0;
+}
+.right-side{
+  .photo{
+    border-radius: 11px;
+  }
+}
