@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hiw-card',
@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hiw-card.component.scss']
 })
 export class HIWCardComponent implements OnInit {
+  @Input() number;
+  @Input() title;
+  @Input() content;
+  @Input() icon;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -1,17 +1,27 @@
 @import "src/variables";
 
+.text-green {
+  color: $check;
+}
+
 .left-side {
+  .left-side-header {
+    display: flex;
+    justify-content: left;
+  }
+  .left-side-body{
+    margin-top: 40px;
+  }
 }
 
 .right-side {
 }
 
 .path {
-  height: fit-content;
+  height: 100%;
 }
 
 .parent {
-  height: 323px !important;
   background: white;
 }
 
@@ -24,21 +34,16 @@
 }
 
 .number {
-  font-family: Nunito;
+  font-family: Nunito, serif;
   font-size: 15px;
   font-weight: bold;
   line-height: 2;
   text-align: center;
   color: #ffffff;
-  padding-left: 5px;
-
-  &::after {
-    content: ".";
-  }
 }
 
 .title {
-  font-family: SurveyorText;
+  font-family: SurveyorText, serif;
   font-size: 25px;
   font-weight: bold;
   font-style: italic;

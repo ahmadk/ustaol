@@ -1,14 +1,33 @@
 <div class="parent my-5">
   <div class="container">
     <div class="row">
-      <div class="col-5 left-side p-0 pt-5">
-        <div class="ellipse"><p class="number">2</p></div>
-        <h3 class="title mt-4 d-inline pl-2 mt-2">Become the chef</h3>
+      <div class="col-5 left-side  pt-5">
+        <div class="left-side-header">
+          <div class="ellipse">
+            <p class="number">{{number}}</p>
+          </div>
+          <h3 class="title pl-2">{{title}}f</h3>
+        </div>
+        <div class="left-side-body">
+          <div class="mb-2">
+            <fa-icon class="text-green" [icon]="icon"></fa-icon>
+            <p class="d-inline-block ml-3">{{content}}</p>
+          </div>
+          <div class="mb-2">
+            <fa-icon class="text-green" [icon]="icon"></fa-icon>
+            <p class="d-inline-block ml-3">{{content}}</p>
+          </div>
+          <div class="mb-2">
+            <fa-icon class="text-green" [icon]="icon"></fa-icon>
+            <p class="d-inline-block ml-3">{{content}}</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col-5 right-side pr-0">
-        <div><img class="path float-right position-absolute" src="../../../assets/images/hiw-page/path.png" alt="">
-          <img class="photo" src="../../../assets/images/hiw-page/hiw2.png" alt="">
+      <div class="col-7 right-side pr-0">
+        <div>
+          <img class="path position-absolute" src="../../../assets/images/hiw-page/path.png" alt="">
+          <img class="photo img-fluid" src="../../../assets/images/hiw-page/hiw2.png" alt="">
         </div>
       </div>
 
