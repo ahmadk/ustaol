@@ -9,13 +9,39 @@
   background-color: $primary !important;
   border: $primary !important;
   color: #ffffff !important;
-  font-family: Nunito;
+  font-family: Nunito, serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: italic;
   line-height: 1.33;
   letter-spacing: normal;
+  text-align: center;
+}
+
+.btn-green {
+  border-radius: 4px !important;
+  background-color: $check !important;
+  border: $check !important;
+  color: #ffffff !important;
+  font-family: Nunito, serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.btn-tangerine {
+  border-radius: 4px !important;
+  background-color: $tangerine !important;
+  border: $tangerine !important;
+  color: #ffffff !important;
+  font-family: Nunito, serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.33;
   text-align: center;
 }
 
@@ -86,6 +112,7 @@
     margin-bottom: 200px;
     border-radius: 8px;
     background-image: linear-gradient(147deg, #d11d35, $primary);
+    height: 460px;
 
     .nav-item {
       margin-top: 25px;

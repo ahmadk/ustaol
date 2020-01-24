@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-profile',
@@ -13,11 +14,17 @@ export class EditProfileComponent implements OnInit {
   faCcMastercard = faCcMastercard;
   faCcAmex = faCcAmex;
   currentOrientation = 'vertical';
+  private checkboxGroupForm: FormGroup;
 
-  constructor() {
+  constructor(private formBuilder: FormBuilder) {
   }
 
   ngOnInit() {
+    this.checkboxGroupForm = this.formBuilder.group({
+      left: true,
+      middle: false,
+      right: false
+    });
   }
 
 }

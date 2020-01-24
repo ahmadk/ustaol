@@ -29,6 +29,165 @@
           <ngb-tab>
             <ng-template ngbTabTitle>My Plan</ng-template>
             <ng-template ngbTabContent>
+              <div class="col-md-12">
+                <h3 class="title">My Plan</h3>
+                <p class="paragraph-text mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                               eirmod tempor invidunt ut
+                                               labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                               accusam et justo duo dolores
+                                               et ea rebum. Stet clita kasd gubergren, no sea
+                </p>
+              </div>
+              <div class="col-md-12 choose-plan">
+                <div class="first-plan">
+                  <img src="../../../assets/images/edit-profile/my-plan-1.png" alt="">
+                  <p class="paragraph-text">2 People</p>
+                </div>
+                <div class="second-plan">
+                  <img src="../../../assets/images/edit-profile/my-plan-2.png" alt="">
+                  <p class="paragraph-text">3 People</p>
+                </div>
+              </div>
+              <div class="row choose-plan-content">
+                <div class="col-md-4">
+                  <div class="card card-green">
+                    <div class="card-header-image"></div>
+                    <div class="card-1">
+                      <img src="../../../assets/images/edit-profile/slad-3.svg  " alt="">
+                      <h6>Vegi</h6>
+                    </div>
+                    <div class="card-body">
+                      <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod temp</p>
+                      <div class="recipes-per-week">
+                        <div class="">
+                          <form [formGroup]="checkboxGroupForm">
+                            <div class="btn-group btn-group-toggle">
+                              <label class="btn-green selected-green" ngbButtonLabel>
+                                <input type="checkbox" formControlName="left" ngbButton>2
+                              </label>
+                              <label class="btn-green pagination-btn-green" ngbButtonLabel>
+                                <input type="checkbox" formControlName="middle" ngbButton>3
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="recipes-per-week-text">
+                          <p class="paragraph-text mb-0">recipes per week</p>
+                          <span>(each serves 2)</span>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <p class="paragraph-text">Price per recipe:</p>
+                        <span>$ 45.00</span>
+                        <p class="paragraph-text">Shipping price:</p>
+                        <span>$ 0.00</span>
+                        <br>
+                        <p class="paragraph-text">Total:</p>
+                        <span>$ 45.00</span>
+                      </div>
+                      <a class="btn btn-green d-block" href="">Selected</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-tangerine">
+                    <div class="card-header-image"></div>
+                    <div class="card-1">
+                      <img src="../../../assets/images/edit-profile/slad-2.svg" alt="">
+                      <h6>Vegi & Meat</h6>
+                    </div>
+                    <div class="card-body">
+                      <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod temp</p>
+                      <div class="recipes-per-week">
+                        <div class="">
+                          <form [formGroup]="checkboxGroupForm">
+                            <div class="btn-group btn-group-toggle">
+                              <label class="btn-tangerine selected-tangerine" ngbButtonLabel>
+                                <input type="checkbox" formControlName="left" ngbButton>2
+                              </label>
+                              <label class="btn-tangerine pagination-btn-tangerine" ngbButtonLabel>
+                                <input type="checkbox" formControlName="middle" ngbButton>3
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="recipes-per-week-text">
+                          <p class="paragraph-text mb-0">recipes per week</p>
+                          <span>(each serves 2)</span>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <p class="paragraph-text">Price per recipe:</p>
+                        <span>$ 45.00</span>
+                        <p class="paragraph-text">Shipping price:</p>
+                        <span>$ 0.00</span>
+                        <br>
+                        <p class="paragraph-text">Total:</p>
+                        <span>$ 45.00</span>
+                      </div>
+                      <a class="btn btn-tangerine d-block" href="">Selected</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-primary">
+                    <div class="card-header-image"></div>
+                    <div class="card-1">
+                      <img src="../../../assets/images/edit-profile/slad.svg" alt="">
+                      <h6>Meat</h6>
+                    </div>
+                    <div class="card-body">
+                      <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod temp</p>
+                      <div class="recipes-per-week">
+                        <div class="">
+                          <form [formGroup]="checkboxGroupForm">
+                            <div class="btn-group btn-group-toggle">
+                              <label class="btn-primary selected" ngbButtonLabel>
+                                <input type="checkbox" formControlName="left" ngbButton>2
+                              </label>
+                              <label class="btn-primary pagination-btn" ngbButtonLabel>
+                                <input type="checkbox" formControlName="middle" ngbButton>3
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="recipes-per-week-text">
+                          <p class="paragraph-text mb-0">recipes per week</p>
+                          <span>(each serves 2)</span>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <p class="paragraph-text">Price per recipe:</p>
+                        <span>$ 45.00</span>
+                        <p class="paragraph-text">Shipping price:</p>
+                        <span>$ 0.00</span>
+                        <br>
+                        <p class="paragraph-text">Total:</p>
+                        <span>$ 45.00</span>
+                      </div>
+                      <a class="btn btn-primary d-block" href="">Selected</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <p class="paragraph-text mt-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                            diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                            amet.
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                            clita kasd gubergren, no sea</p>
+                </div>
+              </div>
             </ng-template>
           </ngb-tab>
           <ngb-tab>
@@ -282,9 +441,66 @@
           <ngb-tab>
             <ng-template ngbTabTitle>My Orders</ng-template>
             <ng-template ngbTabContent>
-              <div><img src="../../../assets/images/me-demo-day.png" alt=""></div>
-              Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee
-              tooed echo park.
+              <div class="col-md-12">
+                <h3 class="title">My Orders</h3>
+              </div>
+              <div class="my-orders">
+                <table class="table table-striped">
+                  <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Order</th>
+                    <th scope="col">Recipe</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="">
+                    <th scope="row">1</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="green-text">Delivered</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <th scope="row">2</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="green-text">Delivered</td>
+                  </tr>
+                  <tr class="">
+                    <th scope="row">3</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="green-text">Delivered</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <th scope="row">4</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="pending-color">PENDING</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="green-text">Delivered</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <th scope="row">6</th>
+                    <td>01313675</td>
+                    <td>Lorem Ipsum</td>
+                    <td>02/08/2020</td>
+                    <td class="green-text">Delivered</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
             </ng-template>
           </ngb-tab>
         </ngb-tabset>
