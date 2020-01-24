@@ -1,55 +1,60 @@
 <div class="menu-header">
   <h3 class="text-center menu-header-text mb-4">Menu for Jan 11-17</h3>
-  <div class="d-flex justify-content-center">
-    <form [formGroup]="checkboxGroupForm">
-      <div class="btn-group btn-group-toggle">
-        <label class="btn-primary selected" ngbButtonLabel>
-          <input type="checkbox" formControlName="left" ngbButton> Jan<br>18-24
-        </label>
-        <label class="btn-primary" ngbButtonLabel>
-          <input type="checkbox" formControlName="middle" ngbButton> Jan<br>18-24
-        </label>
-        <label class="btn-primary" ngbButtonLabel>
-          <input type="checkbox" formControlName="right" ngbButton> Jan<br>25-31
-        </label>
-        <label class="btn-primary" ngbButtonLabel>
-          <input type="checkbox" formControlName="right" ngbButton> Feb<br>01-07
-        </label>
-      </div>
-    </form>
+  <div class="col-md-12">
+    <div class="d-flex justify-content-center">
+      <form [formGroup]="checkboxGroupForm">
+        <div class="btn-group btn-group-toggle">
+          <label class="btn-primary selected" ngbButtonLabel>
+            <input type="checkbox" formControlName="left" ngbButton> Jan<br>18-24
+          </label>
+          <label class="btn-primary" ngbButtonLabel>
+            <input type="checkbox" formControlName="middle" ngbButton> Jan<br>18-24
+          </label>
+          <label class="btn-primary" ngbButtonLabel>
+            <input type="checkbox" formControlName="right" ngbButton> Jan<br>25-31
+          </label>
+          <label class="btn-primary btn-group-toggle-last-item" ngbButtonLabel>
+            <input type="checkbox" formControlName="right" ngbButton> Feb<br>01-07
+          </label>
+        </div>
+      </form>
+    </div>
   </div>
 
 </div>
 <div class="container mt-5">
   <div class="row">
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish1.png"
         title="Spicy Ginger Chicken Tacos"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         url="meal-show"
+        alt=""
         time="30 min"
       ></app-menu-item>
     </div>
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish2.png"
         title="Pork Roast & Balsamic-Shallot Pan Sauce"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         url="meal-show"
+        alt=""
         time="30 min"
       ></app-menu-item>
     </div>
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish3.png"
         title="Orange-Glazed Tilapia"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         url="meal-show"
+        alt=""
         time="30 min"
       ></app-menu-item>
     </div>
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish4.png"
         title="Middle Eastern Cauliflower Bowls"
@@ -58,21 +63,23 @@
         time="30 min"
       ></app-menu-item>
     </div>
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish5.png"
         title="Cheesy Smothered Mushroom Chicken"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         url="meal-show"
+        alt=""
         time="30 min"
       ></app-menu-item>
     </div>
-    <div class="col-4 menu-item">
+    <div class="col-md-4 menu-item">
       <app-menu-item
         image="../../assets/images/menu-items/dish6.png"
         title="Chickpea-Powered Couscous"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing"
         url="meal-show"
+        alt=""
         time="30 min"
       ></app-menu-item>
     </div>

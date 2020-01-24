@@ -12,6 +12,7 @@ export class MenuItemComponent implements OnInit {
   @Input() title;
   @Input() description;
   @Input() url;
+  @Input() alt;
   @Input() time;
   faClock = faClock;
 
