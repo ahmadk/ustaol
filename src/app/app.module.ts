@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatAutocompleteModule, MatButtonModule, MatInputModule, MatStepperModule } from '@angular/material';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,6 +24,7 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     FaqsComponent,
     FaqComponent,
     DistributionDeliveryComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,10 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     FormsModule,
     ReactiveFormsModule,
     FontAwesomeModule,
+    MatStepperModule,
+    MatInputModule,
+    MatButtonModule,
+    MatAutocompleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

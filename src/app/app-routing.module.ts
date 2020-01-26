@@ -9,6 +9,7 @@ import { HowSubscriptionWorksComponent } from './pages/how-subscription-works/ho
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'faqs', component: FaqsComponent},
   {path: 'distribution-delivery', component: DistributionDeliveryComponent},
   {path: 'edit-profile', component: EditProfileComponent},
+  {path: 'register', component: RegisterComponent},
 
 ];
 
