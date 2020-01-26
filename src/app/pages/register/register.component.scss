@@ -1,0 +1,60 @@
+@import "src/variables";
+
+h3 {
+  font-family: SurveyorText, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+p {
+  font-family: Nunito, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: $text-light;
+}
+
+label {
+  font-family: Nunito, serif;
+  font-size: 13px;
+  line-height: 1.31;
+  text-align: left;
+  color: $text;
+}
+
+input {
+  font-family: Nunito, serif;
+  font-size: 13px;
+  line-height: 1;
+  text-align: left;
+  color: $text-light;
+
+}
+
+button {
+  width: 170px;
+  height: 40px;
+}
+
+.register-bg {
+  background-image: url("../../../assets/images/gallery-section-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-dark;
+}
+
+.step-buttons {
+  margin-left: 12%;
+  margin-top: 30px;
+}
+
+.summary-checkbox {
+  border-radius: 6px;
+  border: solid 2px $primary;
+  background-color: #ffffff;
+  width: 30px;
+  float: right;
+}

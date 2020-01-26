@@ -1,0 +1,409 @@
+<section class="register-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mt-5 bg mb-5">
+        <div class="mt-4">
+          <h3>Get Started</h3>
+          <p>Farm-fresh ingredients and delicious recipes delivered weekly to your home</p>
+        </div>
+        <mat-vertical-stepper [linear]="isLinear" #stepper>
+          <mat-step label="Fill out your details">
+            <div class="container">
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-md-10">
+                  <form>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 mb-3">
+                          <label for="full-name">Full name</label>
+                          <input id="full-name" type="text" class="form-control" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="email-address">Email Address</label>
+                          <input id="email-address" type="email" class="form-control" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="password">Password</label>
+                          <input id="password" type="password" class="form-control" placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="password-confirmation">Password Confirmation</label>
+                          <input id="password-confirmation" type="password" class="form-control"
+                                 placeholder="Placeholder">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <button class="float-left btn btn-outline-primary btn-sm" mat-button matStepperNext>Next
+                            <fa-icon class="ml-2" [icon]="faChevronRight"></fa-icon>
+                          </button>
+                        </div>
+                        <div class="col-md-6 mb-3 mt-2 pl-5">
+                          <p class="float-left">Already a member? <a href="#">Sign In</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </mat-step>
+          <mat-step label="Select your Plan">
+            <div class="col-md-12 choose-plan">
+              <div class="first-plan">
+                <img src="../../../assets/images/edit-profile/my-plan-1.png" alt="">
+                <p class="paragraph-text">2 People</p>
+              </div>
+              <div class="second-plan">
+                <img src="../../../assets/images/edit-profile/my-plan-2.png" alt="">
+                <p class="paragraph-text">3 People</p>
+              </div>
+            </div>
+            <div class="row choose-plan-content d-flex justify-content-center">
+              <div class="col-md-3">
+                <div class="card card-green">
+                  <div class="card-header-image"></div>
+                  <div class="card-1">
+                    <img src="../../../assets/images/edit-profile/slad-3.svg  " alt="">
+                    <h6>Vegi</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                              nonumy
+                                              eirmod temp</p>
+                    <div class="recipes-per-week">
+                      <div class="">
+                        <form [formGroup]="checkboxGroupForm">
+                          <div class="btn-group btn-group-toggle">
+                            <label class="btn-green selected-green" ngbButtonLabel>
+                              <input type="checkbox" formControlName="left" ngbButton>2
+                            </label>
+                            <label class="btn-green pagination-btn-green" ngbButtonLabel>
+                              <input type="checkbox" formControlName="middle" ngbButton>3
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="recipes-per-week-text">
+                        <p class="paragraph-text mb-0">recipes per week</p>
+                        <span>(each serves 2)</span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p class="paragraph-text">Price per recipe:</p>
+                      <span>$ 45.00</span>
+                      <p class="paragraph-text">Shipping price:</p>
+                      <span>$ 0.00</span>
+                      <br>
+                      <p class="paragraph-text">Total:</p>
+                      <span>$ 45.00</span>
+                    </div>
+                    <a class="btn btn-green d-block" href="">Selected</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card card-tangerine">
+                  <div class="card-header-image"></div>
+                  <div class="card-1">
+                    <img src="../../../assets/images/edit-profile/slad-2.svg" alt="">
+                    <h6>Vegi & Meat</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                              nonumy
+                                              eirmod temp</p>
+                    <div class="recipes-per-week">
+                      <div class="">
+                        <form [formGroup]="checkboxGroupForm">
+                          <div class="btn-group btn-group-toggle">
+                            <label class="btn-tangerine selected-tangerine" ngbButtonLabel>
+                              <input type="checkbox" formControlName="left" ngbButton>2
+                            </label>
+                            <label class="btn-tangerine pagination-btn-tangerine" ngbButtonLabel>
+                              <input type="checkbox" formControlName="middle" ngbButton>3
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="recipes-per-week-text">
+                        <p class="paragraph-text mb-0">recipes per week</p>
+                        <span>(each serves 2)</span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p class="paragraph-text">Price per recipe:</p>
+                      <span>$ 45.00</span>
+                      <p class="paragraph-text">Shipping price:</p>
+                      <span>$ 0.00</span>
+                      <br>
+                      <p class="paragraph-text">Total:</p>
+                      <span>$ 45.00</span>
+                    </div>
+                    <a class="btn btn-tangerine d-block" href="">Selected</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card card-primary">
+                  <div class="card-header-image"></div>
+                  <div class="card-1">
+                    <img src="../../../assets/images/edit-profile/slad.svg" alt="">
+                    <h6>Meat</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                              nonumy
+                                              eirmod temp</p>
+                    <div class="recipes-per-week">
+                      <div class="">
+                        <form [formGroup]="checkboxGroupForm">
+                          <div class="btn-group btn-group-toggle">
+                            <label class="btn-primary selected" ngbButtonLabel>
+                              <input type="checkbox" formControlName="left" ngbButton>2
+                            </label>
+                            <label class="btn-primary pagination-btn" ngbButtonLabel>
+                              <input type="checkbox" formControlName="middle" ngbButton>3
+                            </label>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="recipes-per-week-text">
+                        <p class="paragraph-text mb-0">recipes per week</p>
+                        <span>(each serves 2)</span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p class="paragraph-text">Price per recipe:</p>
+                      <span>$ 45.00</span>
+                      <p class="paragraph-text">Shipping price:</p>
+                      <span>$ 0.00</span>
+                      <br>
+                      <p class="paragraph-text">Total:</p>
+                      <span>$ 45.00</span>
+                    </div>
+                    <a class="btn btn-primary d-block" href="">Selected</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 step-buttons">
+              <button class="btn btn-outline-primary btn-sm  mr-2" mat-button
+                      matStepperPrevious>
+                <fa-icon class="mr-2" [icon]="faChevronLeft"></fa-icon>
+                Back
+              </button>
+              <button class="btn btn-outline-primary btn-sm" mat-button matStepperNext>Next
+                <fa-icon class="ml-2" [icon]="faChevronRight"></fa-icon>
+              </button>
+            </div>
+          </mat-step>
+          <mat-step label="Delivery">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="address-form">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="delivery-date">Delivery Date</label>
+                          <input type="datetime-local" class="form-control" id="delivery-date">
+                          <p class="text-left paragraph-text">Please add an address where you would be available between
+                                                              12:00 and 04:00 pm</p>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="address-of">Address of</label>
+                          <select id="address-of" class="form-control">
+                            <option selected>Home</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="city">City</label>
+                          <select id="city" class="form-control">
+                            <option selected>City</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="region">Region</label>
+                          <select id="region" class="form-control">
+                            <option selected>Region</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="neighborhood">Neighborhood</label>
+                          <select id="neighborhood" class="form-control">
+                            <option selected>Neighborhood</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="street-name">Street name</label>
+                          <input type="text" class="form-control" id="street-name" placeholder="Placeholder">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="building-number">Building number</label>
+                          <input type="text" class="form-control" id="building-number" placeholder="Placeholder">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for=apartment-number>Apartment number</label>
+                          <input type="text" class="form-control" id="apartment-number" placeholder="Placeholder">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 pl-0">
+                          <div class="form-group col-md-12">
+                            <label for="phone">Phone number</label>
+                            <input type="number" class="form-control" id="phone" placeholder="Placeholder">
+                          </div>
+                          <div class="form-group col-md-12">
+                            <label for="alternative-number">Alternative phone number</label>
+                            <input type="number" class="form-control" id="alternative-number" placeholder="Placeholder">
+                            <small class="form-text text-muted">
+                              This number will be used as a fallback number
+                            </small>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="address-related">Other address related notes</label>
+                          <textarea class="form-control" id="address-related" placeholder="Placeholder"></textarea>
+                        </div>
+                      </div>
+                      <button class="btn btn-outline-primary btn-sm  mr-2" mat-button
+                              matStepperPrevious>
+                        <fa-icon class="mr-2" [icon]="faChevronLeft"></fa-icon>
+                        Back
+                      </button>
+                      <button class="btn btn-outline-primary btn-sm" mat-button matStepperNext>Next
+                        <fa-icon class="ml-2" [icon]="faChevronRight"></fa-icon>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-step>
+          <mat-step label="Payment">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="card-info">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <form>
+                          <div class="form-group">
+                            <label for="name-on-card">Name on card</label>
+                            <input type="text" class="form-control" id="name-on-card" placeholder="Placeholder">
+                          </div>
+                          <div class="form-group">
+                            <label for="card-number">Card number</label>
+                            <input type="number" class="form-control" id="card-number" placeholder="Placeholder">
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-8">
+                              <label for="date">MM/YY</label>
+                              <input type="text" class="form-control" id="date">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="ccv">CCV/CVC</label>
+                              <input type="text" class="form-control" id="ccv">
+                            </div>
+                          </div>
+                        </form>
+
+                      </div>
+                      <div class="col-md-5">
+                        <div class="card bg-primary">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="rectangle"></div>
+                              </div>
+                              <div class="col-md-12 card-number">
+                                <p>1234 &nbsp; 5678 &nbsp; 91011 &nbsp; 1213</p>
+                                <span>01/02</span>
+                              </div>
+                              <div class="col-md-12 card-icon">
+                                <fa-icon [icon]="faCcVisa"></fa-icon>
+                                <p>John Doe</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-primary btn-sm  mr-2" mat-button
+                          matStepperPrevious>
+                    <fa-icon class="mr-2" [icon]="faChevronLeft"></fa-icon>
+                    Back
+                  </button>
+                  <button class="btn btn-outline-primary btn-sm" mat-button matStepperNext>Next
+                    <fa-icon class="ml-2" [icon]="faChevronRight"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </mat-step>
+          <mat-step label="Summary">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="paragraph-text mb-5 text-left">Lorem ipsum <b>dolor sit amet</b>, consetetur sadipscing
+                                                               elitr, sed
+                                                               diam
+                                                               nonumy
+                                                               eirmod tempor</p>
+                      <p class="paragraph-text text-left">gubergren, no sea <b>takimata sanctus</b> est Lorem ipsum
+                                                          dolor sit
+                                                          amet. Lorem
+                                                          ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="paragraph-text mb-5 text-left"><b>Lorem ipsum dolor sit amet</b>, consetetur sadipscing
+                                                                                                elitr, sed diam nonumy
+                                                                                                eirmod tempor
+                      </p>
+                      <p class="paragraph-text mb-5 text-left"> gubergren, no sea takimata sanctus est lorem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="row">
+                    <div class="col-md-1">
+                      <input type="checkbox" class="form-control mt-3 summary-checkbox">
+                    </div>
+                    <div class="col-md-11">
+                      <p class="paragraph-text text-left mt-4">
+                        Lorem ipsum dolor sit amet,
+                        <a href="#">Lorem ipsum dolor sit amet</a>,Lorem ipsum dolor sit ameta,
+                        <a href="#">Lorem ipsum dolor sit amet</a>
+                      </p>
+                    </div>
+                    <div class="col-md-10">
+                      <button type="submit" class="btn btn-outline-primary mt-4">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-step>
+        </mat-vertical-stepper>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
