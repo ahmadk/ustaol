@@ -21,9 +21,9 @@
 
 .btn-green {
   border-radius: 4px !important;
-  background-color: $check !important;
-  border: $check !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border: $check solid 1px !important;
+  color: $check !important;
   font-family: Nunito, serif;
   font-size: 18px;
   font-weight: bold;
@@ -34,9 +34,9 @@
 
 .btn-tangerine {
   border-radius: 4px !important;
-  background-color: $tangerine !important;
-  border: $tangerine !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  border: $tangerine solid 1px !important;
+  color: $tangerine !important;
   font-family: Nunito, serif;
   font-size: 18px;
   font-weight: bold;
@@ -120,6 +120,7 @@
 
     .nav-item {
       margin-top: 25px;
+      width: 100%;
 
       a {
         font-family: Nunito, serif;
@@ -335,6 +336,7 @@
     height: 119px !important;
   }
 }
+
 .card-info {
   .rectangle {
     width: 44px;
@@ -383,6 +385,17 @@
       display: inline-block;
       text-align: left;
       margin-top: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .nav-pills {
+    .nav-item {
+      a {
+        padding-left: 7px !important;
+        font-size: 13px !important;
+      }
     }
   }
 }

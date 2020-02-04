@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-3 header-section">
+        <div class="d-flex profile-info">
+          <div class="header-section">
             <img src="../../../assets/images/me-demo-day.png" alt="" class="rounded-circle">
             <span class="check-avatar-icon">
           <fa-icon class="text-white" [icon]="faChecks"></fa-icon>
           </span>
           </div>
-          <div class="col-md-9 profile-name">
+          <div class="profile-name">
             <h6 class="mt-5">Merhaba, Jane Doe</h6>
             <p>email@example.com</p>
           </div>
@@ -173,19 +173,25 @@
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <p class="paragraph-text mt-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                                            diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                                            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                                            amet.
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                                            eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                                            clita kasd gubergren, no sea</p>
+                  <p class="paragraph-text mt-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                 nonumy
+                                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                 diam
+                                                 voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                                 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                 amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                                                 sed
+                                                 diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                                 Stet
+                                                 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                                                 amet.
+                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                 nonumy
+                                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                                                 diam
+                                                 voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                                                 clita kasd gubergren, no sea</p>
                 </div>
               </div>
             </ng-template>
@@ -196,7 +202,7 @@
               <h3 class="title">Edit Profile</h3>
               <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-2 edit-profile-avatar">
+                  <div class="col-md-3 edit-profile-avatar">
                     <img src="../../../assets/images/me-demo-day.png" alt="" class="rounded-circle">
                   </div>
                   <div class="col-md-9 edit-image">
@@ -229,7 +235,7 @@
                           <input type="email" class="form-control" id="email-address" placeholder="E-mail address">
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">save</button>
+                      <button type="submit" class="btn btn-primary save-btn">save</button>
                     </form>
                   </div>
                 </div>
@@ -257,7 +263,7 @@
                       <label for="new-password-confirmation">New Password Confirmation</label>
                       <input type="password" class="form-control" id="new-password-confirmation">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary save-btn">Save</button>
                   </form>
                 </div>
               </div>
@@ -270,19 +276,19 @@
                 <h3 class="title">Payment</h3>
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">**** **** **** 1213</p>
                       <fa-icon [icon]="faCcVisa"></fa-icon>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">**** **** **** 1213</p>
                       <fa-icon [icon]="faCcMastercard"></fa-icon>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">**** **** **** 1213</p>
                       <fa-icon [icon]="faCcAmex"></fa-icon>
                     </div>
@@ -313,7 +319,7 @@
                           <input type="text" class="form-control" id="ccv">
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">Save</button>
+                      <button type="submit" class="btn btn-primary save-btn">Save</button>
                     </form>
 
                   </div>
@@ -349,19 +355,19 @@
               <div class="cards">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">Home</p>
                       <span>2020/01/19 12:55:59 AM</span>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">Office</p>
                       <span>2020/01/19 12:55:59 AM</span>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card bg-white">
+                    <div class="card bg-white card-number">
                       <p class="paragraph-text">John’s Home</p>
                       <span>2020/01/19 12:55:59 AM</span>
                     </div>
@@ -433,7 +439,7 @@
                       <textarea class="form-control" id="address-related" placeholder="Placeholder"></textarea>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary mb-5">Save</button>
+                  <button type="submit" class="btn btn-primary save-btn mb-5">Save</button>
                 </form>
               </div>
             </ng-template>

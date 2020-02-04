@@ -84,6 +84,7 @@ button {
 
   .profile-name {
     margin-top: 54px;
+    padding-left: 15px;
 
     h6 {
       font-family: SurveyorText, serif;
@@ -175,8 +176,6 @@ button {
   }
 
 
-
-
   .my-orders {
     margin-top: 30px;
 
@@ -211,6 +210,93 @@ button {
         }
       }
     }
+  }
+}
+
+.save-btn {
+  width: unset;
+  height: unset;
+  padding: 5px 54px !important;
+}
+
+@media screen and (width: 768px) {
+  .profile-info {
+    .header-section {
+      img {
+        width: 105px !important;
+        height: 105px !important;
+      }
+    }
+
+    .profile-name {
+      margin-top: 40px !important;
+
+      h6 {
+        font-size: 23px !important;
+      }
+    }
+  }
+  .choose-plan-content {
+    .col-md-4 {
+      padding: 2px 2px !important;
+    }
+
+    .card {
+      .card-1 {
+        h6 {
+          font-size: 16px !important;
+        }
+      }
+
+      .card-body {
+        .recipes-per-week {
+          .paragraph-text {
+            font-size: 13px !important;
+          }
+
+          span {
+            font-size: 8px !important;
+          }
+        }
+
+        .price {
+          .paragraph-text {
+            font-size: 10px !important;
+          }
+
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .choose-plan-content {
+    .col-md-4 {
+      margin-bottom: 15px;
+    }
+  }
+  .edit-image {
+    margin-top: 15px !important;
+  }
+  .upload-image {
+    width: 127px !important;
+    font-size: 12px !important;
+    height: unset !important;
+  }
+  .delete-image {
+    font-size: 14px !important;
+  }
+  .choose-plan {
+    img {
+      height: unset;
+    }
+  }
+  .card-number {
+    margin-bottom: 5px;
   }
 }
 

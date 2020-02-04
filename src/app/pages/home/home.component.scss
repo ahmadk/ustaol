@@ -235,7 +235,7 @@ a {
   height: 264px;
   width: 100%;
   box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
-
+  background-position: center;
 
   /*&:before {
     content: "";
@@ -411,40 +411,7 @@ a {
 }
 
 .as-seen-in-media {
-  height: 259px;
-}
-
-.cheap-intuitive {
-  background-image: url("../../../assets/images/banner-cta.png");
-  height: 436px;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-
-  .cheap-intuitive-content {
-    margin-top: 100px;
-    background-color: #ffffff;
-    height: 236px;
-    opacity: 0.9;
-    border-radius: 2px;
-
-    h3 {
-      padding-top: 30px;
-    }
-
-    p {
-      height: unset;
-    }
-
-    a {
-      width: 185px;
-      height: 50px;
-      display: block;
-      margin: auto;
-      padding: 13px;
-    }
-  }
+  padding-bottom: 70px;
 }
 
 .subscribe {
