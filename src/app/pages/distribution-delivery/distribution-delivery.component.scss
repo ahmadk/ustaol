@@ -129,3 +129,25 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .steps-content {
+    h4 {
+      margin-left: 10px !important;
+    }
+
+    p {
+      font-size: 15px !important;
+      padding-left: 10px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .steps-content {
+    p {
+      font-size: 13px !important;
+    }
+  }
+}

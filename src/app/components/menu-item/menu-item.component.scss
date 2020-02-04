@@ -56,7 +56,7 @@
 }
 
 .meal-desc {
-  font-family: Nunito;
+  font-family: Nunito, serif;
   font-size: 15px;
   line-height: 1.67;
   color: $text-light;
@@ -67,9 +67,12 @@
 }
 
 .details {
+  .float-right{
+    padding-right: 30px!important;
+  }
   .single-detail-text {
     display: inline;
-    font-family: Nunito;
+    font-family: Nunito,serif;
     font-size: 15px;
     line-height: 1.67;
     color: $text;
@@ -84,6 +87,12 @@
 }
 
 .title-and-desc {
-  height: 90px;
 }
-
+@media screen and (max-width: 425px) {
+  .meal-title{
+      font-size: 21px;
+  }
+  .meal-desc{
+    font-size: 14px;
+  }
+}

@@ -28,7 +28,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .btn-group-toggle-last-item {
@@ -41,4 +42,12 @@
   color: white !important;
   height: 68px !important;
   margin-top: -3px;
+}
+
+@media screen and (max-width: 425px) {
+  .btn-primary {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    font-size: 13px !important;
+  }
 }
