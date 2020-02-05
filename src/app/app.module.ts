@@ -27,6 +27,7 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
 import { RegisterComponent } from './pages/register/register.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { CancelComponent } from './pages/cancel/cancel.component';
+import { DistanceContractsComponent } from './pages/distance-contracts/distance-contracts.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { CancelComponent } from './pages/cancel/cancel.component';
     RegisterComponent,
     TermsComponent,
     CancelComponent,
+    DistanceContractsComponent,
   ],
   imports: [
     BrowserModule,

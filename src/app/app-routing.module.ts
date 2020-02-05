@@ -12,6 +12,7 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
 import { RegisterComponent } from './pages/register/register.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { CancelComponent } from './pages/cancel/cancel.component';
+import { DistanceContractsComponent } from './pages/distance-contracts/distance-contracts.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'terms', component: TermsComponent},
   {path: 'cancel', component: CancelComponent},
+  {path: 'distance-contracts', component: DistanceContractsComponent},
 
 ];
 
