@@ -289,6 +289,10 @@ h3 {
     border-bottom: 1px solid $text-light;
     display: block;
   }
+
+  .meal-card:last-child {
+    padding-bottom: 100px;
+  }
 }
 
 

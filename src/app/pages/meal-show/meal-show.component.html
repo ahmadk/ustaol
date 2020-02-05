@@ -130,7 +130,7 @@
           Service instructions for 2 people are set in black (service instructions for 3 people are in red).
         </p>
         <div class="row">
-          <div class="col-md-6 mt-4" *ngFor="let instruction of instructions">
+          <div class="col-md-6 mt-4 meal-card" *ngFor="let instruction of instructions">
             <img class="img-fluid" src="{{instruction.url}}" alt="{{instruction.alt}}">
             <div class="instructions-content">
               <span class="number-of-step">{{instruction.number}}</span>

@@ -338,11 +338,23 @@
 }
 
 .card-info {
+  .card {
+    width: 94%;
+    border-radius: 100% !important;
+  }
+
+  .card-bg {
+    background-image: url("/assets/images/edit-profile/card-bg.png");
+    height: 223px;
+    background-repeat: no-repeat;
+  }
+
+
   .rectangle {
     width: 44px;
     height: 41px;
     background-color: #fda859;
-    margin-top: 40px;
+    margin-top: 5px;
   }
 
   .card-number {
@@ -353,6 +365,7 @@
       text-align: left;
       margin-top: 28px;
       margin-bottom: 15px;
+      color: #ffffff;
     }
 
     span {
@@ -385,6 +398,7 @@
       display: inline-block;
       text-align: left;
       margin-top: 18px;
+      color: #ffffff;
     }
   }
 }
