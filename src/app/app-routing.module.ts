@@ -10,6 +10,8 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { TermsComponent } from './pages/terms/terms.component';
+import { CancelComponent } from './pages/cancel/cancel.component';
 
 
 const routes: Routes = [
@@ -24,6 +26,8 @@ const routes: Routes = [
   {path: 'distribution-delivery', component: DistributionDeliveryComponent},
   {path: 'edit-profile', component: EditProfileComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'terms', component: TermsComponent},
+  {path: 'cancel', component: CancelComponent},
 
 ];
 

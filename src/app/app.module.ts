@@ -25,6 +25,8 @@ import { FaqComponent } from './components/faq/faq.component';
 import { DistributionDeliveryComponent } from './pages/distribution-delivery/distribution-delivery.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { TermsComponent } from './pages/terms/terms.component';
+import { CancelComponent } from './pages/cancel/cancel.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { RegisterComponent } from './pages/register/register.component';
     FaqComponent,
     DistributionDeliveryComponent,
     EditProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    TermsComponent,
+    CancelComponent,
   ],
   imports: [
     BrowserModule,
