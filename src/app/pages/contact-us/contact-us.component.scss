@@ -81,11 +81,14 @@
 }
 
 .contact-form {
-  background-color: $background-dark;
-  height: 750px;
+  background-image: url("../../../assets/images/contact-us-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .form-section {
     margin-top: 70px;
+    margin-bottom: 70px;
 
     h3 {
       font-family: SurveyorText, serif;
