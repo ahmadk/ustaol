@@ -300,6 +300,36 @@ button {
   }
 }
 
+@media screen and (width: 1024px) {
+  .selected {
+    &:after {
+      width: 84%;
+      height: 80%;
+    }
+  }
+}
+
+@media screen and (width: 768px) {
+  .selected {
+    &:after {
+      width: 77%;
+      height: 73%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .first-plan {
+    margin-right: unset;
+  }
+  .selected {
+    &:after {
+      width: 91%;
+      height: 88%;
+    }
+  }
+}
+
 
 
 

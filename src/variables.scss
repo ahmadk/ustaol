@@ -6,4 +6,10 @@ $text-light: rgba(57, 57, 57, 0.5);
 $footer-text: #7c8b9b;
 $check: #3ea520;
 $tangerine: #f69600;
+
+$font1: 'Nunito';
+$font2: 'SurveyorText';
+$font3: 'SurveyorText-blod';
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap&subset=latin-ext');
+@import url('https://db.onlinewebfonts.com/c/960a0e45699d19078767838367aa839a?family=Surveyor+Text+Bold');

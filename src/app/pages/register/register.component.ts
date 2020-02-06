@@ -1,7 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons';
+import {
+  faChevronRight,
+  faChevronLeft,
+  faAddressCard,
+  faCarrot,
+  faTruck,
+  faMoneyCheckAlt,
+  faPaperPlane
+} from '@fortawesome/free-solid-svg-icons';
+import { faCcVisa } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +21,14 @@ export class RegisterComponent implements OnInit {
   faChevronRight = faChevronRight;
   faChevronLeft = faChevronLeft;
   faCcVisa = faCcVisa;
+  faAddressCard = faAddressCard;
+  faCarrot = faCarrot;
+  faTruck = faTruck;
+  faMoneyCheckAlt = faMoneyCheckAlt;
+  faPaperPlane = faPaperPlane;
   isLinear = false;
+  numberOfPeople = 2;
+  username = 'Angular';
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   private checkboxGroupForm: FormGroup;

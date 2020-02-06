@@ -38,13 +38,15 @@
                                                et ea rebum. Stet clita kasd gubergren, no sea
                 </p>
               </div>
-              <div class="col-md-12 choose-plan">
-                <div class="first-plan">
-                  <img src="../../../assets/images/edit-profile/my-plan-1.png" alt="">
+              <div class="row choose-plan">
+                <div class="first-plan col-md-3" [ngClass]="{'selected': numberOfPeople == 2}"
+                     (click)="numberOfPeople = 2">
+                  <img  src="../../../assets/images/edit-profile/my-plan-1.png" alt="">
                   <p class="paragraph-text">2 People</p>
                 </div>
-                <div class="second-plan">
-                  <img src="../../../assets/images/edit-profile/my-plan-2.png" alt="">
+                <div class="second-plan col-md-3" [ngClass]="{'selected': numberOfPeople == 3}"
+                     (click)="numberOfPeople = 3">
+                  <img  src="../../../assets/images/edit-profile/my-plan-2.png" alt="">
                   <p class="paragraph-text">3 People</p>
                 </div>
               </div>
@@ -324,11 +326,8 @@
 
                   </div>
                   <div class="col-md-5">
-                    <div class="card card-bg">
-                      <div class="card-body">
-                        <div class="col-md-12">
-                          <div class="rectangle"></div>
-                        </div>
+                    <div class="card-bg">
+                      <div class="">
                         <div class="col-md-12 card-number">
                           <p>1234 &nbsp; 5678 &nbsp; 91011 &nbsp; 1213</p>
                           <span>01/02</span>

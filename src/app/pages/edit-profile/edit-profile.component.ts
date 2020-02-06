@@ -15,6 +15,7 @@ export class EditProfileComponent implements OnInit {
   faCcAmex = faCcAmex;
   currentOrientation = 'vertical';
   private checkboxGroupForm: FormGroup;
+  numberOfPeople = 2;
 
   constructor(private formBuilder: FormBuilder) {
   }

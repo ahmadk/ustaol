@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>
+            .cls-1{fill:#3ea520;font-size:35px;font-family:FontAwesome5Free-Regular,&apos;Font Awesome 5 Free&apos;}
+        </style>
+    </defs>
+    <text id="check-circle" class="cls-1" transform="translate(0 31)">
+        <tspan x="0" y="0">check-circle</tspan>
+    </text>
+</svg>

@@ -9,7 +9,7 @@
   background-color: $primary !important;
   border: $primary !important;
   color: #ffffff !important;
-  font-family: Nunito, serif;
+  font-family: $font1, serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -154,7 +154,6 @@
 }
 
 .choose-plan {
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
@@ -164,9 +163,29 @@
     margin-right: 20px;
   }
 
+  .selected {
+    &:after {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      width: 86%;
+      height: 83%;
+      top: 0;
+      text-align: center;
+      content: url("/assets/images/edit-profile/check-circle.png");
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 4px;
+    }
+  }
+
+  p {
+    text-align: center !important;
+    margin-top: 5px !important;
+  }
+
   img {
     width: 100%;
-    height: 200px;
     border-radius: 4px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   }
@@ -338,15 +357,12 @@
 }
 
 .card-info {
-  .card {
-    width: 94%;
-    border-radius: 100% !important;
-  }
 
   .card-bg {
     background-image: url("/assets/images/edit-profile/card-bg.png");
-    height: 223px;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
   }
 
 
@@ -358,6 +374,8 @@
   }
 
   .card-number {
+    padding-top: 42px;
+
     p {
       font-size: 18px;
       font-weight: bold;
@@ -401,6 +419,10 @@
       color: #ffffff;
     }
   }
+}
+
+.mat-step-label {
+  width: 100%;
 }
 
 @media screen and (max-width: 425px) {

@@ -52,9 +52,127 @@ button {
 }
 
 .summary-checkbox {
-  border-radius: 6px;
-  border: solid 2px $primary;
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 20px;
+  color: $text;
+  font-family: $font1, serif;
+  line-height: 1.6;
+  text-align: left;
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: solid 2px $primary;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  .checkmark:after {
+    left: 10px;
+    top: 4px;
+    width: 7px;
+    height: 15px;
+    border: solid $primary;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.summary-checkbox input:checked ~ .checkmark {
   background-color: #ffffff;
-  width: 30px;
+}
+
+/* Show the checkmark when checked */
+.summary-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.tab-title {
+  margin-top: 11px;
+}
+
+.title-icon {
+  opacity: 0.1;
   float: right;
+  font-size: 35px;
+  line-height: 1.2;
+  text-align: left;
+  color: $text-light;
+}
+
+.choose-plan {
+  .selected {
+    &:after {
+      width: 89%;
+      height: 86%;
+      content: url("../../../assets/images/edit-profile/check-circle.png");
+    }
+  }
+}
+
+@media screen and (width: 1024px) {
+  .selected {
+    &:after {
+      width: 87% !important;
+      height: 83% !important;
+    }
+  }
+}
+
+@media screen and (width: 768px) {
+  .selected {
+    &:after {
+      width: 82% !important;
+      height: 78% !important;
+    }
+  }
+}
+
+@media screen and (width: 425px) {
+
+  .selected {
+    &:after {
+      width: 92% !important;
+      height: 89% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .first-plan {
+    margin-right: unset;
+  }
+  .selected {
+    &:after {
+      width: 90% !important;
+      height: 88% !important;
+    }
+  }
 }

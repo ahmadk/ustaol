@@ -7,7 +7,11 @@
           <p>Farm-fresh ingredients and delicious recipes delivered weekly to your home</p>
         </div>
         <mat-vertical-stepper [linear]="isLinear" #stepper>
-          <mat-step label="Fill out your details">
+          <mat-step>
+            <ng-template matStepLabel>
+              <div class="d-inline-block tab-title">Fill out your details</div>
+              <fa-icon [icon]="faAddressCard" class="title-icon"></fa-icon>
+            </ng-template>
             <div class="container">
               <div class="row">
                 <div class="col-1"></div>
@@ -47,13 +51,19 @@
               </div>
             </div>
           </mat-step>
-          <mat-step label="Select your Plan">
-            <div class="col-md-12 choose-plan">
-              <div class="first-plan">
+          <mat-step>
+            <ng-template matStepLabel>
+              <div class="d-inline-block tab-title">Select your Plan</div>
+              <fa-icon [icon]="faCarrot" class="title-icon"></fa-icon>
+            </ng-template>
+            <div class="row choose-plan">
+              <div class="first-plan col-md-3" [ngClass]="{'selected': numberOfPeople == 2}"
+                   (click)="numberOfPeople = 2">
                 <img src="../../../assets/images/edit-profile/my-plan-1.png" alt="">
                 <p class="paragraph-text">2 People</p>
               </div>
-              <div class="second-plan">
+              <div class="second-plan col-md-3" [ngClass]="{'selected': numberOfPeople == 3}"
+                   (click)="numberOfPeople = 3">
                 <img src="../../../assets/images/edit-profile/my-plan-2.png" alt="">
                 <p class="paragraph-text">3 People</p>
               </div>
@@ -197,7 +207,11 @@
               </button>
             </div>
           </mat-step>
-          <mat-step label="Delivery">
+          <mat-step>
+            <ng-template matStepLabel>
+              <div class="d-inline-block tab-title">Delivery</div>
+              <fa-icon [icon]="faTruck" class="title-icon"></fa-icon>
+            </ng-template>
             <div class="container">
               <div class="row">
                 <div class="col-md-1"></div>
@@ -285,14 +299,18 @@
               </div>
             </div>
           </mat-step>
-          <mat-step label="Payment">
+          <mat-step>
+            <ng-template matStepLabel>
+              <div class="d-inline-block tab-title">Payment</div>
+              <fa-icon [icon]="faMoneyCheckAlt" class="title-icon"></fa-icon>
+            </ng-template>
             <div class="container">
               <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                   <div class="card-info">
                     <div class="row">
-                      <div class="col-md-7">
+                      <div class="col-md-6">
                         <form>
                           <div class="form-group">
                             <label for="name-on-card">Name on card</label>
@@ -315,22 +333,15 @@
                         </form>
 
                       </div>
-                      <div class="col-md-5">
-                        <div class="card bg-primary">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="rectangle"></div>
-                              </div>
-                              <div class="col-md-12 card-number">
-                                <p>1234 &nbsp; 5678 &nbsp; 91011 &nbsp; 1213</p>
-                                <span>01/02</span>
-                              </div>
-                              <div class="col-md-12 card-icon">
-                                <fa-icon [icon]="faCcVisa"></fa-icon>
-                                <p>John Doe</p>
-                              </div>
-                            </div>
+                      <div class="col-md-6">
+                        <div class="card-body card-bg">
+                          <div class="col-md-12 card-number">
+                            <p>1234 &nbsp; 5678 &nbsp; 91011 &nbsp; 1213</p>
+                            <span>01/02</span>
+                          </div>
+                          <div class="col-md-12 card-icon">
+                            <fa-icon [icon]="faCcVisa"></fa-icon>
+                            <p>John Doe</p>
                           </div>
                         </div>
                       </div>
@@ -348,7 +359,11 @@
               </div>
             </div>
           </mat-step>
-          <mat-step label="Summary">
+          <mat-step>
+            <ng-template matStepLabel>
+              <div class="d-inline-block tab-title">Summary</div>
+              <fa-icon [icon]="faPaperPlane" class="title-icon"></fa-icon>
+            </ng-template>
             <div class="container">
               <div class="row">
                 <div class="col-md-1"></div>
@@ -380,17 +395,13 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
+                  <label class="summary-checkbox">
+                    Lorem ipsum dolor sit amet,<a href="#">Lorem ipsum dolor sit amet,</a>Lorem ipsum dolor sit amet, <a
+                    href="">Lorem ipsum dolor sit amet</a>Lorem ipsum dolor sit amet
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
                   <div class="row">
-                    <div class="col-md-1">
-                      <input type="checkbox" class="form-control mt-3 summary-checkbox">
-                    </div>
-                    <div class="col-md-11">
-                      <p class="paragraph-text text-left mt-4">
-                        Lorem ipsum dolor sit amet,
-                        <a href="#">Lorem ipsum dolor sit amet</a>,Lorem ipsum dolor sit ameta,
-                        <a href="#">Lorem ipsum dolor sit amet</a>
-                      </p>
-                    </div>
                     <div class="col-md-10">
                       <button type="submit" class="btn btn-outline-primary mt-4">Submit</button>
                     </div>
