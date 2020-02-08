@@ -1,7 +1,7 @@
 @import "src/variables";
 
 p {
-  font-family: Nunito, serif;
+  font-family: Nunito, sans-serif;
   font-size: 15px;
   line-height: 1.6;
   text-align: left;
@@ -28,7 +28,7 @@ p {
 
 
 label {
-  font-family: Nunito, serif;
+  font-family: Nunito, sans-serif;
   font-size: 13px;
   line-height: 1.31;
   text-align: left;
@@ -36,7 +36,7 @@ label {
 }
 
 input {
-  font-family: Nunito, serif;
+  font-family: Nunito, sans-serif;
   font-size: 13px;
   line-height: 1;
   text-align: left;
@@ -124,7 +124,7 @@ button {
       border-radius: 4px;
       border: solid 1px $primary;
       background-color: #ffffff;
-      font-family: Nunito, serif;
+      font-family: Nunito, sans-serif;
       font-size: 18px;
       font-weight: bold;
       font-style: italic;
@@ -134,7 +134,7 @@ button {
     }
 
     .delete-image {
-      font-family: Nunito, serif;
+      font-family: Nunito, sans-serif;
       font-size: 18px;
       font-weight: bold;
       font-style: italic;
@@ -167,7 +167,7 @@ button {
       span {
         text-align: end;
         padding: 0 10px 8px 0;
-        font-family: Nunito, serif;
+        font-family: Nunito, sans-serif;
         font-size: 13px;
         line-height: 1.85;
         color: $text-light;
@@ -186,7 +186,7 @@ button {
           background-color: #ffffff;
 
           th {
-            font-family: Nunito, serif;
+            font-family: Nunito, sans-serif;
             font-size: 15px;
             font-weight: bold;
             line-height: 1.33;
@@ -202,7 +202,7 @@ button {
         border: 1px solid $background;
 
         td, th {
-          font-family: Nunito, serif;
+          font-family: Nunito, sans-serif;
           font-size: 15px;
           line-height: 1.33;
           text-align: left;
