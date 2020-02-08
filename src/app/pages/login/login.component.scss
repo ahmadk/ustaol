@@ -1,0 +1,74 @@
+@import "src/variables";
+
+.login {
+  background-image: url("../../../assets/images/login-bg.png");
+}
+
+h3 {
+  font-family: $font2, serif;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.14;
+  color: $text;
+}
+
+p {
+  font-family: $font1, serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: $text-light;
+}
+
+.form-bg {
+  opacity: 0.95;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #ffffff, $background);
+  padding: 25vh 50px;
+  background-repeat: no-repeat;
+
+  label {
+    font-family: $font1, serif;
+    font-size: 13px;
+    line-height: 1.31;
+    color: $text;
+    display: block;
+
+    a {
+      font-family: $font1, serif;
+      font-size: 13px;
+      line-height: 1.31;
+      color: $text-light;
+      text-decoration: underline;
+      float: right;
+    }
+  }
+
+  input {
+    height: 38px;
+    border-radius: 6px;
+    border: solid 0.8px $text-light;
+    background-color: #ffffff;
+    font-size: 13px;
+    line-height: 1;
+    text-align: left;
+    color: $text;
+  }
+
+  button {
+    padding: 7px 60px;
+  }
+
+  .register-link {
+    font-family: $font1;
+    font-size: 13px;
+    line-height: 1.31;
+    color: $text;
+    float: right;
+    padding-top: 10px;
+  }
+}
