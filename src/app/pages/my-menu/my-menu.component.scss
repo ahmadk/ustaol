@@ -1,0 +1,43 @@
+@import "src/variables";
+
+.my-menu {
+  background-color: $background-dark;
+
+  .data {
+    padding: 20px;
+
+    h3 {
+      font-family: $font2, serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.2;
+      text-align: left;
+      color: $text;
+      margin-bottom: 0;
+    }
+
+    a {
+      padding: 7px 35px;
+      font-family: $font1, serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.33;
+      text-align: center;
+    }
+  }
+}
+
+.my-menu-header {
+  font-family: $font3, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  padding: 70px 0 40px;
+}
+
+.last-row{
+  margin-bottom: 80px;
+}

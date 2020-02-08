@@ -67,12 +67,13 @@
 }
 
 .details {
-  .float-right{
-    padding-right: 30px!important;
+  .float-right {
+    padding-right: 30px !important;
   }
+
   .single-detail-text {
     display: inline;
-    font-family: Nunito,serif;
+    font-family: Nunito, serif;
     font-size: 15px;
     line-height: 1.67;
     color: $text;
@@ -87,12 +88,20 @@
 }
 
 .title-and-desc {
-}
-@media screen and (max-width: 425px) {
-  .meal-title{
-      font-size: 21px;
+  h3 {
+    text-align: left;
   }
-  .meal-desc{
+
+  p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .meal-title {
+    font-size: 21px;
+  }
+  .meal-desc {
     font-size: 14px;
   }
 }

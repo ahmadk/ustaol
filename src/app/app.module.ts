@@ -28,6 +28,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { CancelComponent } from './pages/cancel/cancel.component';
 import { DistanceContractsComponent } from './pages/distance-contracts/distance-contracts.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { MyMenuComponent } from './pages/my-menu/my-menu.component';
 
 
 @NgModule({
@@ -52,6 +55,9 @@ import { DistanceContractsComponent } from './pages/distance-contracts/distance-
     TermsComponent,
     CancelComponent,
     DistanceContractsComponent,
+    LoginComponent,
+    AboutUsComponent,
+    MyMenuComponent,
   ],
   imports: [
     BrowserModule,
