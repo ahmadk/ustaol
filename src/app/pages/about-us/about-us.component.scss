@@ -1,0 +1,85 @@
+@import "src/variables";
+
+h3 {
+  font-family: $font3, serif;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-us-hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.about-us-content {
+  margin-top: 50px;
+
+
+  .second-content {
+    margin: 50px 0 50px;
+
+    .col-md-4 {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      h2 {
+        font-size: 35px;
+        font-family: $font3, serif;
+
+        &:after {
+          content: "+";
+          font-size: 15px;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .about-us-card {
+    margin-top: 50px;
+    padding-top: 15%;
+    margin-bottom: 75px;
+
+    .card {
+      border-radius: 40px;
+      background-color: $background;
+
+      .image-search {
+        position: absolute;
+        top: -50px;
+      }
+
+      .image-salad {
+        position: absolute;
+        top: -35px;
+      }
+
+      .image-fast-delivery {
+        position: absolute;
+        top: -60px;
+      }
+
+      h4 {
+        font-family: $font2, serif;
+        font-size: 25px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: left;
+        color: $text;
+        padding-top: 60px;
+        margin-bottom: 19px;
+      }
+
+      p {
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+  }
+}
