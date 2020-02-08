@@ -4,8 +4,7 @@
       <div class="row footer-row">
         <div class="col-md-5 social-media">
           <img src="../../../assets/images/usta-ol-logo.png" alt="logo">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Bibendum est ultricies integer quis.</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
           <div class="social-media-icons">
             <a href="!#">
               <fa-icon [icon]="faGoogle"></fa-icon>
@@ -23,24 +22,32 @@
               <fa-icon [icon]="faInstagram"></fa-icon>
             </a>
           </div>
+          <div class="bank-icons">
+            <a href="">
+              <fa-icon class="mr-2" [icon]="faCcVisa"></fa-icon>
+            </a>
+            <a href="">
+              <fa-icon [icon]="faCcMastercard"></fa-icon>
+            </a>
+          </div>
         </div>
         <div class="col-md-2 pages-link">
           <h3>Pages</h3>
           <ul>
-            <li><a href="#!">Contact Us</a></li>
-            <li><a href="#!">About Us</a></li>
-            <li><a href="#!">Terms and Conditions</a></li>
-            <li><a href="#!">Privacy and Policy</a></li>
-            <li><a href="#!">Sale Agreement</a></li>
+            <li><a [routerLink]="['/contact-us']">Contact Us</a></li>
+            <li><a [routerLink]="['/about-us']">About Us</a></li>
+            <li><a [routerLink]="['/terms']">Terms and Conditions</a></li>
+            <li><a [routerLink]="['/']">Privacy and Policy</a></li>
+            <li><a [routerLink]="['/']">Sale Agreement</a></li>
           </ul>
         </div>
         <div class="col-md-2 pages-link">
           <h3>Pages</h3>
           <ul>
             <li><a href="#!">Sign in</a></li>
-            <li><a href="#!">Register</a></li>
-            <li><a href="#!">Profile</a></li>
-            <li><a href="#!">My Menu</a></li>
+            <li><a [routerLink]="['/register']">Register</a></li>
+            <li><a [routerLink]="['/']">Profile</a></li>
+            <li><a [routerLink]="['/my-menu']">My Menu</a></li>
             <li><a href="#!">My Orders</a></li>
           </ul>
         </div>
