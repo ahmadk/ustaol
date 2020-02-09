@@ -1,0 +1,62 @@
+@import "src/variables";
+
+.my-plan-management {
+  background-color: $background-dark;
+
+  .plan-management-title {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+
+  .your-meals {
+    margin-top: 19px;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    h6 {
+      font-family: $font2, serif;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: $primary;
+    }
+
+    .your-meal-content {
+      display: grid;
+      grid-template-columns: 20% 80%;
+
+      p {
+        text-align: left;
+        font-family: $font1, serif;
+        font-size: 18px;
+        line-height: 1.67;
+        color: $text;
+      }
+
+      span {
+        font-family: $font1, serif;
+        font-size: 15px;
+        line-height: 1.67;
+        text-align: left;
+        color: $text-light;
+      }
+    }
+
+    .your-meal-list {
+      ul {
+        padding-left: 5px;
+        list-style-type: none;
+
+        li {
+          font-family: $font1, serif;
+          font-size: 15px;
+          line-height: 1.67;
+          text-align: left;
+          color: $text-light;
+        }
+      }
+    }
+  }
+}

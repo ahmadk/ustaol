@@ -31,6 +31,7 @@ import { DistanceContractsComponent } from './pages/distance-contracts/distance-
 import { LoginComponent } from './pages/login/login.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MyMenuComponent } from './pages/my-menu/my-menu.component';
+import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-management.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { MyMenuComponent } from './pages/my-menu/my-menu.component';
     LoginComponent,
     AboutUsComponent,
     MyMenuComponent,
+    MyPlanManagementComponent,
   ],
   imports: [
     BrowserModule,

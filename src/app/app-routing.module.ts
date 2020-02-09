@@ -16,6 +16,7 @@ import { DistanceContractsComponent } from './pages/distance-contracts/distance-
 import { LoginComponent } from './pages/login/login.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MyMenuComponent } from './pages/my-menu/my-menu.component';
+import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-management.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'my-menu', component: MyMenuComponent},
+  {path: 'my-menu-management', component: MyPlanManagementComponent},
 ];
 
 @NgModule({
