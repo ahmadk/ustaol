@@ -8,6 +8,12 @@
   a {
     text-decoration: none;
   }
+
+  .meal-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
+  }
 }
 
 .slider-item-image {
@@ -63,7 +69,6 @@
 }
 
 .desc-container {
-  margin-left: 20px;
 }
 
 .details {
@@ -88,6 +93,8 @@
 }
 
 .title-and-desc {
+  margin-top: 15px;
+
   h3 {
     text-align: left;
   }
