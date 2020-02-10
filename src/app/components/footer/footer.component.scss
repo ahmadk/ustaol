@@ -3,6 +3,8 @@
 .footer-top {
   border: solid 1px #b3b3b3;
   background-color: $background;
+  z-index: 99999;
+  position: relative;
 
   .footer-row {
     margin-top: 31px;
@@ -30,6 +32,7 @@
 
     .bank-icons {
       margin-top: 30px;
+
       a {
         font-size: 37px;
         line-height: 1.19;
