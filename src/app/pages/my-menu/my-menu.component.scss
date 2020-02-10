@@ -38,6 +38,12 @@
   padding: 70px 0 40px;
 }
 
-.last-row{
+.last-row {
   margin-bottom: 80px;
+}
+
+.skip-this-week-button {
+  &:hover {
+    background-color: #ffffff !important;
+  }
 }

@@ -1,5 +1,9 @@
 @import "variables";
 
+body {
+  font-family: $font1, serif;
+}
+
 .bg {
   background-color: #ffffff;
 }
@@ -439,6 +443,14 @@ h3 {
 
 .mat-step-label {
   width: 100%;
+}
+
+.mat-dialog-container {
+  padding: 16px !important;
+}
+
+.mat-button-wrapper {
+  color: $primary !important;
 }
 
 @media screen and (max-width: 425px) {

@@ -1,0 +1,114 @@
+@import "src/variables";
+
+.plan-skip {
+  .plan-skip-title {
+    width: 500px;
+    height: 62px;
+    background-color: #ffffff;
+
+    h3 {
+      font-family: $font2, serif;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.43;
+      text-align: left;
+      color: $text;
+
+    }
+  }
+
+  .plan-skip-content {
+    width: 500px;
+
+    p {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text;
+    }
+  }
+
+  .specify-textarea {
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    width: 100%;
+
+    &:focus {
+      outline: $primary auto 5px;
+    }
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: left;
+    color: $text;
+  }
+}
+
+.plan-skip-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .radio-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+}
+
+/* When the radio button is checked, add a blue background */
+input:checked ~ .radio-button {
+  background-color: $primary;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+
+/* Show the indicator (dot/circle) when checked */
+.plan-skip-label input:checked ~ .radio-button:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.plan-skip-label .radio-button:after {
+  top: 8px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.submit-btn {
+  padding: 7px 50px;
+}
