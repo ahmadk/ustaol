@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatAutocompleteModule, MatButtonModule, MatInputModule, MatStepperModule } from '@angular/material';
+import { MatAutocompleteModule, MatButtonModule, MatDialogModule, MatInputModule, MatStepperModule } from '@angular/material';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +32,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MyMenuComponent } from './pages/my-menu/my-menu.component';
 import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-management.component';
-
+import { MyPlanSkipComponent } from './pages/my-plan-skip/my-plan-skip.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +60,7 @@ import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-ma
     AboutUsComponent,
     MyMenuComponent,
     MyPlanManagementComponent,
+    MyPlanSkipComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,6 +76,7 @@ import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-ma
     MatInputModule,
     MatButtonModule,
     MatAutocompleteModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

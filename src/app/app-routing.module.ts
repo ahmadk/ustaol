@@ -17,6 +17,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MyMenuComponent } from './pages/my-menu/my-menu.component';
 import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-management.component';
+import { MyPlanSkipComponent } from './pages/my-plan-skip/my-plan-skip.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path: 'about-us', component: AboutUsComponent},
   {path: 'my-menu', component: MyMenuComponent},
   {path: 'my-menu-management', component: MyPlanManagementComponent},
+  {path: 'my-plan-skip', component: MyPlanSkipComponent},
 ];
 
 @NgModule({

@@ -1,38 +1,21 @@
 <section class="my-plan-management">
   <div class="container">
-    <div class="row">
+    <div class="row pb">
       <div class="col-md-12">
         <h3 class="plan-management-title">Meals Management</h3>
       </div>
       <div class="col-md-4">
         <div class="card your-meals">
           <div class="card-body">
-            <h6>Your Meals:</h6>
-            <div class="your-meal-content mt-4">
+            <h6 class="mb-4">Your Meals:</h6>
+            <div *ngFor="let selectedMeal of selectedMeals;let selectedMealsIndex = index"
+                 class="your-meal-content">
               <div class="">
-                <img src="../../assets/images/menu-items/dish1.png" alt="" width="52" height="52">
+                <img [src]="selectedMeal.image" alt="" width="52" height="52">
               </div>
               <div class="">
-                <span>Meal 1:</span>
-                <p>Spicy Ginger Chicken Tacos</p>
-              </div>
-            </div>
-            <div class="your-meal-content">
-              <div class="">
-                <img src="../../assets/images/menu-items/dish2.png" alt="" width="52" height="52">
-              </div>
-              <div class="">
-                <span>Meal 2:</span>
-                <p>Pork Roast & Balsamic-</p>
-              </div>
-            </div>
-            <div class="your-meal-content">
-              <div class="">
-                <img src="../../assets/images/menu-items/dish3.png" alt="" width="52" height="52">
-              </div>
-              <div class="">
-                <span>Meal 3:</span>
-                <p>-</p>
+                <span>Meal {{selectedMealsIndex + 1}}:</span>
+                <p>{{selectedMeal.title}}</p>
               </div>
             </div>
             <div class="your-meal-list">
@@ -43,36 +26,39 @@
               </ul>
             </div>
             <div class="d-block">
-            <a class="btn btn-primary w-100" href="!#">Save</a>
+              <a class="btn btn-primary w-100" href="!#">Save</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-8">
         <div class="row">
-          <div class="col-md-6 menu-item">
-            <app-menu-item
-              image="../../assets/images/menu-items/dish6.png"
-              title="Chickpea-Powered Couscous"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
-              url="meal-show"
-              alt=""
-              icon="../../assets/icons/chicken-gray.svg"
-              iconSpan="Chicken"
-              time="30 min"
-            ></app-menu-item>
-          </div>
-          <div class="col-md-6 menu-item">
-            <app-menu-item
-              image="../../assets/images/menu-items/dish6.png"
-              title="Chickpea-Powered Couscous"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
-              url="meal-show"
-              alt=""
-              icon="../../assets/icons/chicken-gray.svg"
-              iconSpan="Chicken"
-              time="30 min"
-            ></app-menu-item>
+          <div *ngFor="let meal of meals"
+               class="col-md-6 menu-item">
+            <div class="menu-item-container mb-5 mt-3">
+              <div class="d-flex justify-content-center" [ngClass]="{'selected': checkIfMealIsSelected(meal) }"
+                   (click)="selectMeal(meal)">
+                <img class="mb-0 meal-image" [src]="meal.image" alt="">
+              </div>
+              <div class="my-0 desc-container">
+                <div class="title-and-desc">
+                  <a href="">
+                    <h3 class="my-0 slider-item-title meal-title">{{meal.title}}</h3>
+                    <p class="mt-0 meal-desc">{{meal.description}}</p>
+                  </a>
+                </div>
+                <div class="details">
+                  <div class="float-left">
+                    <img [src]="meal.type.icon" width="22" alt="">
+                    <span class="single-detail-text">{{meal.type.name}}</span>
+                  </div>
+                  <div class="float-right">
+                    <fa-icon [icon]="faClock"></fa-icon>
+                    <span class="single-detail-text">{{meal.preparationPeriod}}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
