@@ -1,13 +1,14 @@
 @import "src/variables";
 
 .hero-background {
-  background-image: url("../../../assets/images/hero-bg.png");
+  background-image: url("../../../assets/images/home-hero-bg.png");
   width: auto;
-  height: 687px;
+  padding-bottom: 42px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  margin-top: -5%;
 }
 
 p {
@@ -47,7 +48,7 @@ a {
 }
 
 .hero-content {
-  margin: 19% auto;
+  margin: 18% auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +61,6 @@ a {
 }
 
 .video-thumbnail {
-  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -129,7 +129,7 @@ a {
 }
 
 .choose-meals {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .meals-preview {
@@ -150,9 +150,14 @@ a {
   }
 }
 
-.how-it-works-btn {
+.how-it-works {
+  margin-top: 60px;
 
+  .how-it-works-btn {
+
+  }
 }
+
 
 .box {
   height: 806px;
@@ -233,7 +238,8 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   height: 264px;
-  width: 100%;
+  width: 95%;
+  border-radius: 8px;
   box-shadow: 1px 16px 16px 0 rgba(0, 0, 0, 0.16);
   background-position: center;
 

@@ -38,19 +38,19 @@ export class HomeComponent implements OnInit {
     title: 'Sed diam nonumy eirmod tempor invidunt.',
   }];
   public tastePicturesSlides: slidesStoreTypes = [{
-    url: '../../assets/images/home-slider-1.png',
+    url: '../../assets/images/menu-items/menu1.png',
     subtitle: 'COD CAKES',
     alt: 'slider image',
   }, {
-    url: '../../assets/images/home-slider-2.png',
+    url: '../../assets/images/menu-items/menu1.png',
     subtitle: 'THREE-BEAN ANCHO TURKEY CHILI',
     alt: 'slider image',
   }, {
-    url: '../../assets/images/home-slider-3.png',
+    url: '../../assets/images/menu-items/menu1.png',
     subtitle: 'SICILIAN-STYLE CHICKEN PARM',
     alt: 'slider image',
   }, {
-    url: '../../assets/images/home-slider-3.png',
+    url: '../../assets/images/menu-items/menu1.png',
     subtitle: 'SICILIAN-STYLE CHICKEN PARM',
     alt: 'slider image',
   }];
