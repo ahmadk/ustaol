@@ -2,10 +2,10 @@
 
 .map {
   background-image: url("../../../assets/images/map.png");
-  height: 430px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 20px;
 
   .card {
     margin-top: 57px;
