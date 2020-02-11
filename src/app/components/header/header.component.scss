@@ -54,4 +54,16 @@
 
     }
   }
+  .register-btns {
+    margin-top: 0 !important;
+
+    .navbar-nav {
+      padding-left: 0 !important;
+    }
+
+    li {
+      padding-left: 20px !important;
+      margin-left: 0 !important;
+    }
+  }
 }

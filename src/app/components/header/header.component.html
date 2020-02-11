@@ -2,11 +2,11 @@
 
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <button class="navbar-toggler navbar-toggler-right bg-dark" type="button"
+    <button class="navbar-toggler navbar-toggler-right" type="button"
             (click)="navbarCollapsed = !navbarCollapsed"
             [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false"
             aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style="background-image: url('../../../assets/icons/menu-button.svg')"></span>
     </button>
 
     <div class="navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarContent">
@@ -44,14 +44,15 @@
           <a class="nav-link" [routerLink]="['/contact-us']" (click)="navbarCollapsed = true">Contact Us</a>
         </li>
       </ul>
-      <ul class="navbar-nav nav-group">
+      <ul class="navbar-nav nav-group register-btns">
         <li class="nav-item ml-2">
           <div class="float-right navbar-nav">
             <a class="nav-link" [routerLink]="['/login']" (click)="navbarCollapsed = true">Sign in</a>
           </div>
         </li>
         <li class="nav-item ml-2">
-          <a class="btn btn-primary getting-started" [routerLink]="['/register']" onclick="return false;">Getting started</a>
+          <a class="btn btn-primary getting-started" [routerLink]="['/register']" onclick="return false;">Getting
+                                                                                                          started</a>
         </li>
       </ul>
     </div>
