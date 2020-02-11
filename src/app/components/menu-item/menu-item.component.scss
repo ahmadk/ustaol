@@ -94,6 +94,7 @@
 
 .title-and-desc {
   margin-top: 15px;
+  height: 120px;
 
   h3 {
     text-align: left;
@@ -112,3 +113,30 @@
     font-size: 14px;
   }
 }
+
+@media screen and (width: 1024px) {
+  .title-and-desc {
+    height: 100px;
+
+    h3 {
+      font-size: 22px;
+
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (width: 768px) {
+  .title-and-desc {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .title-and-desc {
+    height: 100px;
+  }
+}
+
