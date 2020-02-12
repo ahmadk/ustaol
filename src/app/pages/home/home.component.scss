@@ -1,14 +1,79 @@
 @import "src/variables";
 
-.hero-background {
+.hero {
+  height: 90vh;
+}
+
+.hero-content {
   background-image: url("../../../assets/images/home-hero-bg.png");
-  width: auto;
-  padding-bottom: 42px;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 42px;
+  overflow: hidden;
   margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .video-thumbnail {
+    margin-bottom: 0;
+
+    .play-btn {
+      background: $primary;
+      border-radius: 50%;
+      line-height: 108px;
+      animation: animate 2s linear infinite;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        opacity: 0.2;
+        border-radius: 100%;
+        background-color: $primary;
+        margin-top: -8px;
+        margin-left: -7px;
+      }
+    }
+
+    .play-btn fa-icon {
+      color: #ffffff;
+      font-size: 20px;
+      margin-left: 8px;
+      position: absolute;
+      top: 19px;
+      left: 16px;
+    }
+    .play-icon {
+      width: 16px;
+      height: 19px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      z-index: 10;
+    }
+  }
 }
 
 p {
@@ -47,57 +112,7 @@ a {
   font-family: Nunito;
 }
 
-.hero-content {
-  margin: 18% auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
-  h3 {
-    text-align: center;
-    font-size: 35px;
-  }
-}
-
-.video-thumbnail {
-  margin-bottom: 0;
-}
-
-.play-btn {
-  background: $primary;
-  border-radius: 50%;
-  line-height: 108px;
-  animation: animate 2s linear infinite;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    opacity: 0.2;
-    border-radius: 100%;
-    background-color: $primary;
-    margin-top: -8px;
-    margin-left: -7px;
-  }
-}
-
-.play-btn fa-icon {
-  color: #ffffff;
-  font-size: 20px;
-  margin-left: 8px;
-  position: absolute;
-  top: 19px;
-  left: 16px;
-}
 
 @keyframes animate {
   0% {
@@ -112,20 +127,6 @@ a {
   100% {
     box-shadow: 0 0 0 rgba(255, 193, 7, 0);
   }
-}
-
-.play-icon {
-  width: 16px;
-  height: 19px;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  z-index: 10;
 }
 
 .choose-meals {

@@ -3,7 +3,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o/lib/models/owl-options.model';
 import { CarouselComponent, SlidesOutputData } from 'ngx-owl-carousel-o';
 import { faCheck, faQuoteLeft, faQuoteRight, faPlay, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-type MealsPreviewType = { subtitle: string; title: string; url: string }[];
+type HowItWorks = { subtitle: string; title: string; icon: string }[];
 type discountItemsTypes = { title: string; }[];
 type slidesStoreTypes = { url: string; subtitle: string; alt: string }[];
 type galleryStandardImageTypes = { url: string; alt: string }[];
@@ -17,18 +17,18 @@ type mediaCompanyLogoTypes = { url: string; alt: string }[];
 })
 export class HomeComponent implements OnInit {
   @ViewChild('carouselComponent', {static: false}) carouselComponent: CarouselComponent;
-  public mealsPreview: MealsPreviewType = [{
+  public howItWorks: HowItWorks = [{
     title: 'Select your Meals',
     subtitle: 'Choose your plan and enter your details',
-    url: '../../assets/images/meals-preview.png',
+    icon: '../../assets/icons/1-meals.svg',
   }, {
     title: 'We package and deliver',
     subtitle: 'We will deliver a packaged box with all ingredients',
-    url: '../../assets/images/delivery-preview.png',
+    icon: '../../assets/icons/2-deliver.svg',
   }, {
     title: 'Cook, Eat n Repeat',
     subtitle: 'Choose your plan and enter your details',
-    url: '../../assets/images/cooking.png',
+    icon: '../../assets/icons/3-cooking.svg',
   }];
   public discountItems: discountItemsTypes = [{
     title: 'Lorem ipsum dolor sit amet ut  magna aliquyam.',

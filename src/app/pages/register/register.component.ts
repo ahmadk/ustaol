@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
   faMoneyCheckAlt = faMoneyCheckAlt;
   faPaperPlane = faPaperPlane;
   isLinear = false;
-  numberOfPeople = 2;
+  numberOfPeople = 0;
   username = 'Angular';
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;

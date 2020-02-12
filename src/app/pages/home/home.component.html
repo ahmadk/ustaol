@@ -1,22 +1,16 @@
 <section class="hero">
-  <div class="hero-background">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 hero-content">
-          <h3>The Perfect <span>Cooking Ex</span>perience.</h3>
-          <p>Get everything you need to make amazing meals
-            <br> delivered in one perfectly customized box.</p>
-          <div class="video-thumbnail">
-            <div class="play-btn">
-              <a class="play-icon" href="#">
-                <fa-icon [icon]="faPlay"></fa-icon>
-              </a>
-            </div>
-          </div>
-          <a class="btn btn-primary btn-large choose-meals" href="/menu">Choose Your Meals</a>
-        </div>
+  <div class="hero-content">
+    <h3>The Perfect <span>Cooking Ex</span>perience.</h3>
+    <p>Get everything you need to make amazing meals
+      <br> delivered in one perfectly customized box.</p>
+    <div class="video-thumbnail">
+      <div class="play-btn">
+        <a class="play-icon" href="#">
+          <fa-icon [icon]="faPlay"></fa-icon>
+        </a>
       </div>
     </div>
+    <a class="btn btn-primary btn-large choose-meals" href="/menu">Choose Your Meals</a>
   </div>
 </section>
 <!--end hero section-->
@@ -31,11 +25,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4" *ngFor="let mealPreview of mealsPreview">
+      <div class="col-md-4" *ngFor="let howItWorks of howItWorks">
         <div class="meals-preview">
-          <img [src]="mealPreview.url" alt="">
-          <h2>{{mealPreview.title}}</h2>
-          <p [innerHTML]="mealPreview.subtitle"></p>
+          <img [src]="howItWorks.icon" width="200">
+          <h2>{{howItWorks.title}}</h2>
+          <p [innerHTML]="howItWorks.subtitle"></p>
         </div>
       </div>
       <div class="col-md-12 text-center">
@@ -174,7 +168,7 @@
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <h2>John Doe, Designer / Acme</h2>
-                <img src="../../../assets/images/me-demo-day.png" alt="">
+                <img src="../../../assets/images/user-avatar.png" alt="">
               </div>
             </div>
           </div>
@@ -184,7 +178,7 @@
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <h2>John Doe, Designer / Acme</h2>
-                <img src="../../../assets/images/me-demo-day.png" alt="">
+                <img src="../../../assets/images/user-avatar.png" alt="">
               </div>
             </div>
           </div>
@@ -196,7 +190,7 @@
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <h2>John Doe, Designer / Acme</h2>
-                <img src="../../../assets/images/me-demo-day.png" alt="">
+                <img src="../../../assets/images/user-avatar.png" alt="">
               </div>
             </div>
           </div>
@@ -206,7 +200,7 @@
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                                      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 <h2>John Doe, Designer / Acme</h2>
-                <img src="../../../assets/images/me-demo-day.png" alt="">
+                <img src="../../../assets/images/user-avatar.png" alt="">
                 <fa-icon class="quote-right" [icon]="faQuoteRight"></fa-icon>
               </div>
             </div>
