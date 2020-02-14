@@ -74,8 +74,8 @@ h3 {
   border-color: $primary;
 
   &:hover {
-    color: #ffffff;
     background-color: $primary;
+    color: #ffffff;
   }
 }
 
@@ -459,9 +459,6 @@ h3 {
   padding: 16px !important;
 }
 
-.mat-button-wrapper {
-  color: $primary !important;
-}
 
 @media screen and (max-width: 425px) {
   .nav-pills {

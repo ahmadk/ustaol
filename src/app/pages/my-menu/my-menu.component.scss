@@ -43,6 +43,8 @@
 }
 
 .skip-this-week-button {
+  color: $primary !important;
+
   &:hover {
     background-color: #ffffff !important;
   }
