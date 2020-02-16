@@ -143,6 +143,21 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .steps {
+    display: none;
+  }
+  .steps-left-section {
+    .steps-left-card {
+      padding-top: 14% !important;
+    }
+  }
+  .steps-card {
+    padding-top: 14% !important;
+    padding-bottom: unset !important;
+  }
+}
+
 @media screen and (max-width: 360px) {
 
   .steps-content {
