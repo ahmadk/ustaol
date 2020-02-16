@@ -23,6 +23,7 @@
     text-align: center;
     font-size: 35px;
   }
+
   .video-thumbnail {
     margin-bottom: 0;
 
@@ -60,6 +61,7 @@
       top: 19px;
       left: 16px;
     }
+
     .play-icon {
       width: 16px;
       height: 19px;
@@ -113,7 +115,6 @@ a {
 }
 
 
-
 @keyframes animate {
   0% {
     box-shadow: 0 0 0 0 rgb(232, 33, 61);
@@ -161,8 +162,16 @@ a {
 
 
 .box {
-  height: 806px;
-  padding-top: 200px;
+  padding-bottom: 90px;
+
+  .big-box {
+    position: relative;
+    z-index: 5;
+  }
+
+  .animation {
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .discount {
@@ -469,6 +478,33 @@ a {
   }
 }
 
+.broccoli {
+  position: absolute;
+  right: 0;
+  top: -90px;
+}
+
+.sweet-paper {
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 50px;
+    top: -50px;
+  }
+}
+
+
+.gallery-sweet-paper {
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: -95px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .gallery {
     height: auto !important;
@@ -512,7 +548,19 @@ a {
   .discount-content {
     width: 96% !important;
   }
-
+  .vegetables-sm {
+    display: none;
+  }
+  .box {
+    margin-top: 40px;
+  }
+  .discount-button {
+    display: block;
+  }
+  .margin-sm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 375px) {

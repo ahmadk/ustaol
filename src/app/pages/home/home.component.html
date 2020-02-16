@@ -37,10 +37,16 @@
       </div>
     </div>
   </div>
+  <div class="position-relative vegetables-sm">
+    <img class="broccoli img-fluid" src="../../assets/images/broccoli.png" alt="">
+  </div>
+  <div class="container position-relative mt-5 ml-5 vegetables-sm">
+    <img class="img-fluid" src="../../assets/images/paper.png" alt="">
+  </div>
 </section>
 <!--end how it works section-->
 <!--start box section-->
-<section class="box">
+<section class="box" (mouseover)="hover=true" (mouseleave)="hover=false">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -49,6 +55,24 @@
            dolore <br> magna aliquyam erat, sed diam voluptua.</p>
       </div>
       <div class="col-4">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(385px)' }"
+             class="img-fluid animation" src="../../assets/images/home-box/left-to-box.png" alt="">
+        <h2>Quality Ingredients</h2>
+        <p>Choose your plan and enter your details</p>
+      </div>
+      <div class="col-4">
+        <img class="img-fluid big-box" src="../../assets/images/home-box/box-itself.png" alt="">
+        <h2>Quality Ingredients</h2>
+        <p>Choose your plan and enter your details</p>
+      </div>
+      <div class="col-4">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-170px)' }"
+             class="img-fluid animation"
+             src="../../assets/images/home-box/right-to-box-3.png" alt="">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-350px)' }"
+             class="img-fluid animation" src="../../assets/images/home-box/right-to-box-2.png" alt="">
+        <h2>Quality Ingredients</h2>
+        <p>Choose your plan and enter your details</p>
       </div>
     </div>
   </div>
@@ -56,6 +80,9 @@
 <!--end box section-->
 <!--start discount section-->
 <section class="discount">
+  <div class="sweet-paper">
+    <img src="../../assets/images/sweet-paper-1.png" alt="">
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-4 discount-content">
@@ -120,6 +147,9 @@
         <h3>Prepare It, Enjoy it, Tag it #ustaOl</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           <br>dolore magna aliquyam erat, sed diam voluptua.</p>
+        <div class="gallery-sweet-paper">
+          <img src="../../assets/images/sweet-paper-2.png" alt="">
+        </div>
       </div>
     </div>
     <div class="row gallery-row">
@@ -161,7 +191,7 @@
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 margin-sm">
             <div class="card opinions-take-proud-card-white">
               <fa-icon class="quote-left" [icon]="faQuoteLeft"></fa-icon>
               <div class="card-body">
@@ -172,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 margin-sm">
             <div class="card opinions-take-proud-card-light">
               <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -184,7 +214,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 margin-sm">
             <div class="card opinions-take-proud-card-light">
               <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -194,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 margin-sm">
             <div class="card opinions-take-proud-card-white">
               <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
