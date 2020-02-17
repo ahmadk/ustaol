@@ -36,7 +36,7 @@
           <div *ngFor="let meal of meals"
                class="col-md-6 menu-item">
             <div class="menu-item-container mb-5 mt-3">
-              <div class="d-flex justify-content-center" [ngClass]="{'selected': checkIfMealIsSelected(meal) }"
+                <div class="d-flex justify-content-center menu-item-img" [ngClass]="{'selected': checkIfMealIsSelected(meal) }"
                    (click)="selectMeal(meal)">
                 <img class="mb-0 meal-image" [src]="meal.image" alt="">
               </div>
