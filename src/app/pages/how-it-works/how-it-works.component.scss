@@ -119,11 +119,36 @@ h3 {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .path {
+    display: none;
+  }
+  .left-side-body {
+    p {
+      font-size: 15px !important;
+    }
+  }
+  .left-side {
+    padding-left: 15px !important;
+  }
+  .right-side {
+    padding-left: 0 !important;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .left-side-body {
     p {
       font-size: 15px !important;
       margin-left: 7px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .left-side-body {
+    p {
+      font-size: 12px !important;
     }
   }
 }

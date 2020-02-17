@@ -49,3 +49,29 @@
     background-color: #ffffff !important;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .data {
+    display: flex;
+
+    h3 {
+      font-size: 20px !important;
+      margin-right: 3px !important;
+    }
+
+    div {
+      display: flex;
+
+      .btn-outline-primary {
+        margin-right: 4px !important;
+      }
+
+      a {
+        align-self: center;
+        padding: 5px 8px !important;
+        font-size: 9px !important;
+        word-wrap: break-word !important;
+      }
+    }
+  }
+}

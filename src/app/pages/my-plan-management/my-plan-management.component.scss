@@ -1,7 +1,9 @@
 @import "src/variables";
-.pb{
+
+.pb {
   padding-bottom: 100px;
 }
+
 .my-plan-management {
   background-color: $background-dark;
 
@@ -70,6 +72,29 @@
   user-select: none;
   cursor: pointer;
 
+  .menu-item-img {
+    height: 100%;
+    &.selected {
+      .meal-title {
+        color: $primary;
+      }
+
+      &:after {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        text-align: center;
+        content: url("../../../assets/images/edit-profile/check-circle.png");
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+      }
+    }
+  }
+
   a {
     text-decoration: none;
   }
@@ -81,25 +106,6 @@
   }
 }
 
-.selected {
-  .meal-title {
-    color: $primary;
-  }
-
-  &:after {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    text-align: center;
-    content: url("../../../assets/images/edit-profile/check-circle.png");
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 4px;
-  }
-}
 
 .slider-item-image {
 }

@@ -54,24 +54,34 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
            dolore <br> magna aliquyam erat, sed diam voluptua.</p>
       </div>
-      <div class="col-4">
-        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(385px)' }"
-             class="img-fluid animation" src="../../assets/images/home-box/left-to-box.png" alt="">
-        <h2>Quality Ingredients</h2>
-        <p>Choose your plan and enter your details</p>
-      </div>
-      <div class="col-4">
+      <div class="box-image-animation">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0)' : 'translateX(385px)' }"
+             class="img-fluid animation left-to-box" src="../../assets/images/home-box/left-to-box.png" alt="">
         <img class="img-fluid big-box" src="../../assets/images/home-box/box-itself.png" alt="">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-215px)' }"
+             class="img-fluid animation right-to-box-first"
+             src="../../assets/images/home-box/right-to-box-1.png" alt="">
+        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-350px)' }"
+             class="img-fluid animation right-to-box-second" src="../../assets/images/home-box/right-to-box-2.png"
+             alt="">
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid lg-none" src="../../assets/images/home-box/left-to-box.png" alt="">
         <h2>Quality Ingredients</h2>
         <p>Choose your plan and enter your details</p>
       </div>
-      <div class="col-4">
-        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-170px)' }"
-             class="img-fluid animation"
-             src="../../assets/images/home-box/right-to-box-3.png" alt="">
-        <img [ngStyle]="{transform: hover==true  ? 'translateX(0px)' : 'translateX(-350px)' }"
-             class="img-fluid animation" src="../../assets/images/home-box/right-to-box-2.png" alt="">
-        <h2>Quality Ingredients</h2>
+      <div class="col-md-4">
+        <img class="img-fluid lg-none" src="../../assets/images/home-box/box-itself.png" alt="">
+        <h2>The Box</h2>
+        <p>Choose your plan and enter your details</p>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex justify-content-center align-items-center lg-none">
+          <img class="img-fluid" src="../../assets/images/home-box/right-to-box-1.png" alt="">
+          <img class="img-fluid align-self-end" src="../../assets/images/home-box/right-to-box-2.png"
+               alt="">
+        </div>
+        <h2>Easy Recipe Cards</h2>
         <p>Choose your plan and enter your details</p>
       </div>
     </div>
@@ -147,7 +157,7 @@
         <h3>Prepare It, Enjoy it, Tag it #ustaOl</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           <br>dolore magna aliquyam erat, sed diam voluptua.</p>
-        <div class="gallery-sweet-paper">
+        <div class="gallery-sweet-paper vegetables-sm/my-menu">
           <img src="../../assets/images/sweet-paper-2.png" alt="">
         </div>
       </div>
@@ -288,3 +298,10 @@
   </div>
 </section>
 <!--end subscribe-->
+
+<div appParallax [ratio]="-0.9" id="square">
+  <img src="../../assets/images/paper.png" alt="">
+</div>
+<div appParallax [ratio]="-0.7" id="circle">
+  <img src="../../assets/images/sweet-paper-1.png" alt="">
+</div>
