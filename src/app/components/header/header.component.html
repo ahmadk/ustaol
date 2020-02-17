@@ -13,19 +13,19 @@
       <ul class="navbar-nav mr-auto nav-group">
         <li class="nav-item" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/home']" (click)="navbarCollapsed = true">
-            <img src="../../../assets/images/logo.svg" alt="logo">
+            <img src="../../../assets/images/logo.svg" alt="logo" width="88px">
           </a>
         </li>
-        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+        <li class="nav-item mt-4 ml-2" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/home']" (click)="navbarCollapsed = true">Home</a>
         </li>
-        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+        <li class="nav-item mt-4 ml-2" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/my-menu']" (click)="navbarCollapsed = true">Plans</a>
         </li>
-        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+        <li class="nav-item mt-4 ml-2" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/menu']" (click)="navbarCollapsed = true">Menu</a>
         </li>
-        <li class="nav-item mt-3 ml-2">
+        <li class="nav-item mt-4 ml-2">
           <div ngbDropdown class="d-inline-block">
             <a class="nav-link" id="dropdownBasic1" href="#" onclick="return false;" ngbDropdownToggle>
               How it works
@@ -37,10 +37,10 @@
             </div>
           </div>
         </li>
-        <li class="nav-item mt-3 ml-2" [routerLinkActive]="['active']">
+        <li class="nav-item mt-4 ml-2" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/faqs']" (click)="navbarCollapsed = true">FAQ</a>
         </li>
-        <li class="nav-item mt-3" [routerLinkActive]="['active']">
+        <li class="nav-item mt-4" [routerLinkActive]="['active']">
           <a class="nav-link" [routerLink]="['/contact-us']" (click)="navbarCollapsed = true">Contact Us</a>
         </li>
       </ul>
