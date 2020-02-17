@@ -33,10 +33,12 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MyMenuComponent } from './pages/my-menu/my-menu.component';
 import { MyPlanManagementComponent } from './pages/my-plan-management/my-plan-management.component';
 import { MyPlanSkipComponent } from './pages/my-plan-skip/my-plan-skip.component';
+import { ParallaxDirective } from './directive/parallax.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ParallaxDirective,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
