@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faCcVisa, faCcMastercard, faCcAmex } from '@fortawesome/free-brands-svg-icons';
+import {faCheck, faCreditCard} from '@fortawesome/free-solid-svg-icons';
+import {faCcVisa, faCcMastercard, faCcAmex, faCcDiscover} from '@fortawesome/free-brands-svg-icons';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -16,7 +16,12 @@ export class EditProfileComponent implements OnInit {
   currentOrientation = 'vertical';
   private checkboxGroupForm: FormGroup;
   numberOfPeople = 2;
-
+  cc: any = {
+    name: '',
+    number: '',
+    date: '01/02',
+    cvc: '',
+  };
   constructor(private formBuilder: FormBuilder) {
   }
 
@@ -26,6 +31,22 @@ export class EditProfileComponent implements OnInit {
       middle: false,
       right: false
     });
+  }
+
+  getCreditCardIcon(ccNumber) {
+    const initialDigit = ccNumber.substring(0, 1);
+    switch (initialDigit) {
+      case '3':
+        return faCcAmex;
+      case '4':
+        return faCcVisa;
+      case '5':
+        return faCcMastercard;
+      case '6':
+        return faCcDiscover;
+      default:
+        return faCreditCard;
+    }
   }
 
 }

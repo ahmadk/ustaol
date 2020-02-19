@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {
-  faChevronRight,
-  faChevronLeft,
   faAddressCard,
   faCarrot,
-  faTruck,
+  faChevronLeft,
+  faChevronRight,
+  faCreditCard,
   faMoneyCheckAlt,
-  faPaperPlane
+  faPaperPlane,
+  faTruck
 } from '@fortawesome/free-solid-svg-icons';
-import { faCcVisa } from '@fortawesome/free-brands-svg-icons';
+import {faCcAmex, faCcDiscover, faCcMastercard, faCcVisa} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-register',
@@ -35,6 +36,13 @@ export class RegisterComponent implements OnInit {
 
 
   // tslint:disable-next-line:variable-name
+  cc: any = {
+    name: '',
+    number: '',
+    date: '01/02',
+    cvc: '',
+  };
+
   constructor(private _formBuilder: FormBuilder, private formBuilder: FormBuilder) {
   }
 
@@ -52,4 +60,19 @@ export class RegisterComponent implements OnInit {
     });
   }
 
+  getCreditCardIcon(ccNumber) {
+    const initialDigit = ccNumber.substring(0, 1);
+    switch (initialDigit) {
+      case '3':
+        return faCcAmex;
+      case '4':
+        return faCcVisa;
+      case '5':
+        return faCcMastercard;
+      case '6':
+        return faCcDiscover;
+      default:
+        return faCreditCard;
+    }
+  }
 }
